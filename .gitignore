@@ -1,0 +1,37 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Scene builder backup files
+*.bak
+
+# ScenicView files
+scenicView.properties
+
+# windows thumbnail files
+*.db
+
+# Intellij IDEA output dir
+out/
+
+# Intellij user files
+.idea/workspace.xml
+tasks.xml
+
+# Scenic View auxiliary file
+scenicView.properties
+
+# libraries includind JUnit and ScenicView
+lib/
