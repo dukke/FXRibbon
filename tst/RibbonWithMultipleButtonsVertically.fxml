@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.pixelduke.javafx.ribbon.Ribbon?>
+<?import com.pixelduke.javafx.ribbon.RibbonTab?>
+<?import com.pixelduke.javafx.ribbon.RibbonGroup?>
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Ribbon>
+            <tabs>
+                <RibbonTab text="Home">
+                    <ribbonGroups>
+                        <RibbonGroup title="Store">
+                            <nodes>
+                                <Button contentDisplay="TOP" text="Store">
+                                    <graphic>
+                                        <ImageView>
+                                            <image>
+                                                <Image url="@store.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </nodes>
+                        </RibbonGroup>
+                    </ribbonGroups>
+                </RibbonTab>
+                <RibbonTab text="Scrape">
+                </RibbonTab>
+                <RibbonTab text="Filter">
+                </RibbonTab>
+                <RibbonTab text="Options">
+                </RibbonTab>
+                <RibbonTab text="Help">
+                </RibbonTab>
+            </tabs>
+        </Ribbon>
+
+    </children>
+</AnchorPane>

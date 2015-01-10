@@ -10,10 +10,10 @@ import org.scenicview.ScenicView;
 import java.net.URL;
 
 /**
- * Created by pedro_000 on 1/22/14.
+ * Created by pedro_000 on 1/6/2015.
  */
-public class RibbonCreatedThroughFXMLTest extends Application {
-    static final String RESOURCE = "RibbonFXML.fxml";
+public class AdvancedRibbonTest extends Application {
+    static final String RESOURCE = "AdvancedRibbonFXML.fxml";
     static final String STYLE_SHEET = "../resource/fxribbon.css";
 
     @Override

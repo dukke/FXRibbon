@@ -1,5 +1,6 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Column;
 import com.pixelduke.javafx.ribbon.Ribbon;
 import com.pixelduke.javafx.ribbon.RibbonGroup;
 import com.pixelduke.javafx.ribbon.RibbonTab;

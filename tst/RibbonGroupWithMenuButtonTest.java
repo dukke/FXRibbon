@@ -1,5 +1,6 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Column;
 import com.pixelduke.javafx.ribbon.RibbonGroup;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -22,7 +23,7 @@ public class RibbonGroupWithMenuButtonTest extends Application {
         rootNode.setCenter(ribbonGroup);
 
         MenuButton number = new MenuButton("Number");
-        Image iconImage = new Image(getClass().getResourceAsStream("ribbon/number.png"));
+        Image iconImage = new Image(getClass().getResourceAsStream("number.png"));
         number.setGraphic(new ImageView(iconImage));
 
         number.getItems().addAll(new MenuItem("test1"), new MenuItem("test2"), new MenuItem("test3"), new MenuItem("test4"));

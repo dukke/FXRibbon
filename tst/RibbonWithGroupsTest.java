@@ -1,5 +1,6 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Column;
 import com.pixelduke.javafx.ribbon.Ribbon;
 import com.pixelduke.javafx.ribbon.RibbonGroup;
 import com.pixelduke.javafx.ribbon.RibbonTab;
@@ -29,18 +30,22 @@ public class RibbonWithGroupsTest extends Application{
         Button iconButton = new Button("Play", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
         iconImage = new Image(getClass().getResourceAsStream("stop.png"));
         iconButton = new Button("Stop", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
         iconImage = new Image(getClass().getResourceAsStream("pause.png"));
         iconButton = new Button("Pause", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
         iconImage = new Image(getClass().getResourceAsStream("fastForward.png"));
         iconButton = new Button("Next", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
         ribbonTab.getRibbonGroups().add(ribbonGroup);
 
         ribbonGroup = new RibbonGroup();
@@ -48,6 +53,7 @@ public class RibbonWithGroupsTest extends Application{
         iconButton = new Button("Save Results", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
         ribbonTab.getRibbonGroups().add(ribbonGroup);
 
 

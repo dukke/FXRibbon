@@ -1,5 +1,6 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Column;
 import com.pixelduke.javafx.ribbon.RibbonGroup;
 import com.pixelduke.javafx.ribbon.RibbonTextField;
 import javafx.application.Application;
@@ -18,7 +19,8 @@ public class RibbonGroupWithTextFieldTest extends Application {
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbonGroup);
 
-        ribbonGroup.getNodes().addAll(new RibbonTextField("Fake IP Address:"), new RibbonTextField("Timeout(seconds):"));
+        ribbonGroup.getNodes().add(new RibbonTextField("Fake IP Address:"));
+        ribbonGroup.getNodes().add(new RibbonTextField("Timeout(seconds):"));
 
         Scene scene = new Scene(rootNode);
 //        ScenicView.show(scene);

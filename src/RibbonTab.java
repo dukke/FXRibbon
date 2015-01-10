@@ -15,7 +15,7 @@ import java.util.List;
  * Created by pedro_000 on 1/20/14.
  */
 public class RibbonTab extends Tab {
-    public static final int CONTENT_HEIGHT = 130;
+//    public static final int CONTENT_HEIGHT = 70;
     public static final String DEFAULT_STYLE_CLASS = "ribbon-tab";
 
     HBox content;
@@ -36,7 +36,7 @@ public class RibbonTab extends Tab {
     private void init() {
         ribbonGroups = FXCollections.observableArrayList();
         content = new HBox();
-        content.setMinHeight(CONTENT_HEIGHT);
+//        content.setMinHeight(CONTENT_HEIGHT);
         this.setContent(content);
 
         setClosable(false);
@@ -90,17 +90,17 @@ public class RibbonTab extends Tab {
     private void updateAddedGroups(List<? extends RibbonGroup> addedSubList) {
         for (RibbonGroup group : addedSubList)
         {
-            if (content.getChildren().size() != 0)
-                content.getChildren().add(createSeparator());
+//            if (content.getChildren().size() != 0)
+//                content.getChildren().add(createSeparator());
             content.getChildren().add(group);
         }
     }
 
-    private Node createSeparator() {
-        Separator separator = new Separator();
-        separator.setOrientation(Orientation.VERTICAL);
-        return separator;
-    }
+//    private Node createSeparator() {
+//        Separator separator = new Separator();
+//        separator.setOrientation(Orientation.VERTICAL);
+//        return separator;
+//    }
 
     public ObservableList<RibbonGroup> getRibbonGroups()
     {

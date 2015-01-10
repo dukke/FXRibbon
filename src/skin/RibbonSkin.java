@@ -73,5 +73,4 @@ public class RibbonSkin extends SkinBase<Ribbon> {
         }
     }
 
-
 }

@@ -1,5 +1,6 @@
 package com.pixelduke.javafx.ribbon.tests;
 
+import com.pixelduke.javafx.ribbon.Column;
 import com.pixelduke.javafx.ribbon.RibbonGroup;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -25,6 +26,7 @@ public class RibbonGroupWithButtonsTest extends Application{
         Button iconButton = new Button("Play", new ImageView(iconImage));
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
+
 
         iconImage = new Image(getClass().getResourceAsStream("stop.png"));
         iconButton = new Button("Stop", new ImageView(iconImage));
