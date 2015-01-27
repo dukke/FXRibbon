@@ -15,6 +15,7 @@
 <?import com.pixelduke.javafx.ribbon.Column?>
 <?import javafx.collections.*?>
 
+<?import com.pixelduke.javafx.ribbon.RibbonItem?>
 <BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
     <top>
         <Ribbon>
@@ -64,87 +65,95 @@
                         <RibbonGroup title="Preferences">
                             <nodes>
                                 <Column>
-                                    <HBox spacing="4" alignment="CENTER_LEFT">
-                                        <Label>
-                                            <graphic>
-                                                <ImageView>
-                                                    <image>
-                                                        <Image url="@skins.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </graphic>
-                                        </Label>
-                                        <ComboBox>
-                                            <items>
-                                                <FXCollections fx:factory="observableArrayList">
-                                                    <String fx:value="Office Silver 2007" />
-                                                    <String fx:value="Office Blue 2007" />
-                                                    <String fx:value="Nebula Brick Wall" />
-                                                    <String fx:value="Business Blue Steel" />
-                                                </FXCollections>
-                                            </items>
-                                        </ComboBox>
-                                    </HBox>
+                                    <RibbonItem>
+                                        <graphic>
+                                            <ImageView>
+                                                <image>
+                                                    <Image url="@skins.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
 
-                                    <ComboBox>
-                                        <items>
-                                            <FXCollections fx:factory="observableArrayList">
-                                                <String fx:value="English (UK)" />
-                                                <String fx:value="Portugues (PT)" />
-                                                <String fx:value="Portugues (BR)" />
-                                                <String fx:value="English (USA)" />
-                                            </FXCollections>
-                                        </items>
-                                    </ComboBox>
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="Office Silver 2007" />
+                                                        <String fx:value="Office Blue 2007" />
+                                                        <String fx:value="Nebula Brick Wall" />
+                                                        <String fx:value="Business Blue Steel" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
+
+                                    <RibbonItem>
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="English (UK)" />
+                                                        <String fx:value="Portugues (PT)" />
+                                                        <String fx:value="Portugues (BR)" />
+                                                        <String fx:value="English (USA)" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
                                 </Column>
                                 <Column>
-                                    <HBox spacing="4" alignment="CENTER_LEFT">
-                                        <Label text="Angles:">
-                                            <graphic>
-                                                <ImageView>
-                                                    <image>
-                                                        <Image url="@angulos16x16_2.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </graphic>
-                                        </Label>
-                                        <ComboBox>
-                                            <items>
-                                                <FXCollections fx:factory="observableArrayList">
-                                                    <String fx:value="Radians" />
-                                                    <String fx:value="Degrees" />
-                                                </FXCollections>
-                                            </items>
-                                        </ComboBox>
-                                    </HBox>
-                                    <HBox spacing="4" alignment="CENTER_LEFT">
-                                        <Label text="Decimal Places:">
-                                            <graphic>
-                                                <ImageView>
-                                                    <image>
-                                                        <Image url="@decimal places.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </graphic>
-                                        </Label>
-                                        <TextField text="2" prefWidth="60" > </TextField>
-                                    </HBox>
-                                    <HBox spacing="4" alignment="CENTER_LEFT">
-                                        <Label text="Exponential Threshold:">
-                                            <graphic>
-                                                <ImageView>
-                                                    <image>
-                                                        <Image url="@ExponentialThreshold.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </graphic>
-                                        </Label>
-                                        <TextField text="3" prefWidth="60" > </TextField>
-                                    </HBox>
+                                    <RibbonItem label="Angles:">
+                                        <graphic>
+                                            <ImageView>
+                                                <image>
+                                                    <Image url="@angulos16x16_2.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="Radians" />
+                                                        <String fx:value="Degrees" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
+                                    <RibbonItem label="Decimal Places:">
+                                        <graphic>
+                                            <ImageView>
+                                                <image>
+                                                    <Image url="@decimal places.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                        <item>
+                                            <TextField text="2" prefWidth="60" > </TextField>
+                                        </item>
+
+                                    </RibbonItem>
+                                    <RibbonItem label="Exponential Threshold:" >
+                                                    <graphic>
+                                                        <ImageView>
+                                                            <image>
+                                                                <Image url="@ExponentialThreshold.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+
+                                        <item>
+                                                <TextField text="3" prefWidth="60"> </TextField>
+                                        </item>
+                                    </RibbonItem>
                                 </Column>
 
                                 <Column>
-                                    <ToggleButton text="locked" styleClass="normal" prefWidth="100">
+                                    <ToggleButton text="locked" styleClass="normal" minWidth="-Infinity">
                                         <graphic>
                                             <ImageView>
                                                 <image>
