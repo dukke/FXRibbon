@@ -114,5 +114,8 @@ public class Ribbon extends Control{
         selectedRibbonTab.set(ribbonTab);
     }
 
-
+    @Override
+    public String getUserAgentStylesheet() {
+        return getClass().getResource("resource/fxribbon.css").toExternalForm();
+    }
 }

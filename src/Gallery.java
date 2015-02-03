@@ -68,4 +68,9 @@ public class Gallery extends Control {
     protected Skin<?> createDefaultSkin() {
         return new GallerySkin(this);
     }
+
+    @Override
+    public String getUserAgentStylesheet() {
+        return getClass().getResource("resource/fxribbon.css").toExternalForm();
+    }
 }

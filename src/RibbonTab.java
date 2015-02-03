@@ -90,17 +90,10 @@ public class RibbonTab extends Tab {
     private void updateAddedGroups(List<? extends RibbonGroup> addedSubList) {
         for (RibbonGroup group : addedSubList)
         {
-//            if (content.getChildren().size() != 0)
-//                content.getChildren().add(createSeparator());
             content.getChildren().add(group);
         }
     }
 
-//    private Node createSeparator() {
-//        Separator separator = new Separator();
-//        separator.setOrientation(Orientation.VERTICAL);
-//        return separator;
-//    }
 
     public ObservableList<RibbonGroup> getRibbonGroups()
     {
