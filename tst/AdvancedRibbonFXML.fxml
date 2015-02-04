@@ -210,6 +210,8 @@
                 </RibbonTab>
                 <RibbonTab text="NOTES">
                 </RibbonTab>
+                <RibbonTab text="SERIES" contextualColor="blue">
+                </RibbonTab>
             </tabs>
         </Ribbon>
 

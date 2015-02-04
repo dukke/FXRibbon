@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Separator;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 
 import java.util.List;
 
@@ -21,6 +22,8 @@ public class RibbonTab extends Tab {
     HBox content;
 
     ObservableList<RibbonGroup> ribbonGroups;
+
+    private String contextualColor;
 
     public RibbonTab()
     {
@@ -63,6 +66,18 @@ public class RibbonTab extends Tab {
                 }
             }
         });
+
+    }
+
+    public void setContextualColor(String color)
+    {
+        contextualColor = color;
+        getStyleClass().add(color);
+    }
+
+    public String getContextualColor()
+    {
+        return contextualColor;
     }
 
     private void groupsChanged(ListChangeListener.Change<? extends RibbonGroup> changed) {

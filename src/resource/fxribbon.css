@@ -74,6 +74,74 @@
     -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
 }
 
+/* Contextual tabs */
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.blue {
+    -fx-background-color: transparent, transparent, lightblue;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.blue:selected {
+    -fx-background-color: transparent, #cccccc, lightblue;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.orange {
+    -fx-background-color: transparent, transparent, orange;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.orange:selected {
+    -fx-background-color: transparent, #cccccc, orange;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.green {
+    -fx-background-color: transparent, transparent, greenyellow;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.green:selected {
+    -fx-background-color: transparent, #cccccc, greenyellow;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.yellow {
+    -fx-background-color: transparent, transparent, yellow;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.yellow:selected {
+    -fx-background-color: transparent, #cccccc, yellow;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.violet {
+    -fx-background-color: transparent, transparent, violet;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.violet:selected {
+    -fx-background-color: transparent, #cccccc, violet;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.pink {
+    -fx-background-color: transparent, transparent, lightpink;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.25em 0.0769em 1.25em; /* 1 15 0.99 15 */
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.pink:selected {
+    -fx-background-color: transparent, #cccccc, lightpink;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+
 .ribbon  > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
     -fx-text-fill: #767676;
     -fx-font-size: 1em; /* 16 */
