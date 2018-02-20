@@ -23,6 +23,10 @@ scenicView.properties
 # windows thumbnail files
 *.db
 
+# Intellij IDEA files
+.idea/
+*.iml
+
 # Intellij IDEA output dir
 out/
 
