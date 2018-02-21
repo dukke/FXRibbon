@@ -939,7 +939,7 @@
  *                                                                             *
  ******************************************************************************/
 .ribbon .text-field{
-    -fx-skin: "com.pixelduke.javafx.ribbon.skin.MetroTextFieldSkin";
+    -fx-skin: "impl.com.pixelduke.skin.ribbon.MetroTextFieldSkin";
 }
 
 .ribbon .text-input{
