@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class RibbonTab extends Tab {
 //    public static final int CONTENT_HEIGHT = 70;
-    public static final String DEFAULT_STYLE_CLASS = "ribbon-tab";
+    private static final String DEFAULT_STYLE_CLASS = "ribbon-tab";
 
     HBox content;
 

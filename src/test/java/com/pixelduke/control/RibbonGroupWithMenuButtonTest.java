@@ -22,7 +22,7 @@ public class RibbonGroupWithMenuButtonTest extends Application {
         rootNode.setCenter(ribbonGroup);
 
         MenuButton number = new MenuButton("Number");
-//        Image iconImage = new Image(getClass().getResourceAsStream("number.png"));
+//        Image iconImage = new Image(RibbonGroupWithMenuButtonTest.class.getResourceAsStream("number.png"));
 //        number.setGraphic(new ImageView(iconImage));
 
         number.getItems().addAll(new MenuItem("test1"), new MenuItem("test2"), new MenuItem("test3"), new MenuItem("test4"));

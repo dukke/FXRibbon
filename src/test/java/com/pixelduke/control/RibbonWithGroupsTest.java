@@ -24,22 +24,22 @@ public class RibbonWithGroupsTest extends Application{
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbon);
 
-//        Image iconImage = new Image(getClass().getResourceAsStream("play.png"));
+//        Image iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("play.png"));
         Button iconButton = new Button("Play");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(getClass().getResourceAsStream("stop.png"));
+//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("stop.png"));
         iconButton = new Button("Stop");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(getClass().getResourceAsStream("pause.png"));
+//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("pause.png"));
         iconButton = new Button("Pause");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/fastForward.png"));
+//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("java/com/pixelduke/control/fastForward.png"));
         iconButton = new Button("Next");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
@@ -47,7 +47,7 @@ public class RibbonWithGroupsTest extends Application{
         ribbonTab.getRibbonGroups().add(ribbonGroup);
 
         ribbonGroup = new RibbonGroup();
-//        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/save.png"));
+//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("java/com/pixelduke/control/save.png"));
         iconButton = new Button("Save Results");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);

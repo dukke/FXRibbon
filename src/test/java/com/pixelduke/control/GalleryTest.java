@@ -17,7 +17,7 @@ public class GalleryTest extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL resource = getClass().getResource(RESOURCE);
+        URL resource = GalleryTest.class.getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
         Scene scene = new Scene(root);
 

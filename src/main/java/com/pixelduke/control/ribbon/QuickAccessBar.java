@@ -11,7 +11,7 @@ import javafx.scene.control.Skin;
  * Created by pedro_000 on 2/19/14.
  */
 public class QuickAccessBar extends Control {
-    public final static String DEFAULT_STYLE_CLASS = "quick-access-bar";
+    private final static String DEFAULT_STYLE_CLASS = "quick-access-bar";
 
     ObservableList<Button> buttons;
     ObservableList<Button> rightButtons;

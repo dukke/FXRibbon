@@ -15,7 +15,7 @@ import javafx.scene.control.Skin;
  * Created by pedro_000 on 1/13/2015.
  */
 public class Gallery extends Control {
-    public static String DEFAULT_STYLE_CLASS = "gallery";
+    private static String DEFAULT_STYLE_CLASS = "gallery";
 
     private ObservableList<GalleryItem> items;
     private ObjectProperty<GalleryItem> selectedItem;

@@ -13,7 +13,7 @@ import javafx.scene.control.Skin;
  * Created by pedro_000 on 1/19/2015.
  */
 public class RibbonItem extends Control {
-    public static String DEFAULT_STYLE_CLASS = "ribbon-item";
+    private static String DEFAULT_STYLE_CLASS = "ribbon-item";
 
     private ObjectProperty<Node> graphic;
     private StringProperty label;

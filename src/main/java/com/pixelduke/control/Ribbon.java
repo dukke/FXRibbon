@@ -17,7 +17,7 @@ import java.util.HashMap;
  * Created by pedro_000 on 1/18/14.
  */
 public class Ribbon extends Control{
-    public final static String DEFAULT_STYLE_CLASS = "ribbon";
+    private final static String DEFAULT_STYLE_CLASS = "ribbon";
 
     private ObservableList<String> tabTitles;
     private ObservableList<RibbonTab> tabs;
@@ -118,6 +118,6 @@ public class Ribbon extends Control{
 
     @Override
     public String getUserAgentStylesheet() {
-        return getClass().getResource("fxribbon.css").toExternalForm();
+        return Ribbon.class.getResource("fxribbon.css").toExternalForm();
     }
 }

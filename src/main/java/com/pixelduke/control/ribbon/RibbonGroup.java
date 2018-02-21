@@ -13,7 +13,7 @@ import javafx.scene.control.Skin;
  * Created by pedro_000 on 1/20/14.
  */
 public class RibbonGroup extends Labeled {
-    public final static String DEFAULT_STYLE_CLASS = "ribbon-group";
+    private final static String DEFAULT_STYLE_CLASS = "ribbon-group";
 
     private ObservableList<Node> nodes;
     private SimpleStringProperty title;

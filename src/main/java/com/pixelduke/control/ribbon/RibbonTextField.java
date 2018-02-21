@@ -9,7 +9,7 @@ import javafx.scene.layout.VBox;
  * Created by pedro_000 on 1/22/14.
  */
 public class RibbonTextField extends VBox {
-    public static final String DEFAULT_STYLE_CLASS = "ribbon-text-field";
+    private static final String DEFAULT_STYLE_CLASS = "ribbon-text-field";
     private TextField textField;
     private Label label;
 

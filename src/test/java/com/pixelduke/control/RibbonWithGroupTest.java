@@ -24,7 +24,7 @@ public class RibbonWithGroupTest extends Application {
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbon);
 
-//        Image storeImage = new Image(getClass().getResourceAsStream("store.png"));
+//        Image storeImage = new Image(RibbonWithGroupTest.class.getResourceAsStream("store.png"));
         Button storeButton = new Button("Store");
         storeButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(storeButton);
