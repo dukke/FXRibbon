@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.pixelduke.control.Ribbon?>
+<?import com.pixelduke.control.ribbon.RibbonTab?>
+<?import com.pixelduke.control.ribbon.RibbonGroup?>
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Ribbon>
+            <tabs>
+                <RibbonTab text="HOME">
+                    <ribbonGroups>
+                        <RibbonGroup title="File">
+                            <nodes>
+                                <Button contentDisplay="TOP" text="Open">
+                                    <graphic>
+                                        <ImageView>
+                                            <image>
+                                                <Image url="@folder_action_open.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="New">
+                                    <graphic>
+                                        <ImageView>
+                                            <image>
+                                                <Image url="@document-new.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="Save">
+                                    <graphic>
+                                        <ImageView>
+                                            <image>
+                                                <Image url="@save.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="Save as">
+                                    <graphic>
+                                        <ImageView>
+                                            <image>
+                                                <Image url="@save_as.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </nodes>
+                        </RibbonGroup>
+                    </ribbonGroups>
+                </RibbonTab>
+            </tabs>
+        </Ribbon>
+
+    </top>
+</BorderPane>
