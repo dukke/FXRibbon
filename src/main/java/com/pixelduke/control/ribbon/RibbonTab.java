@@ -40,24 +40,16 @@ public class RibbonTab extends Tab {
 
         setClosable(false);
 
-        ribbonGroups.addListener(new ListChangeListener<RibbonGroup>() {
-            @Override
-            public void onChanged(Change<? extends RibbonGroup> changed) {
-                groupsChanged(changed);
-            }
-        });
+        ribbonGroups.addListener(this::groupsChanged);
         content.getStyleClass().setAll(DEFAULT_STYLE_CLASS, "tab");
-        getStyleClass().addListener(new ListChangeListener<String>() {
-            @Override
-            public void onChanged(Change<? extends String> c) {
-                while(c.next())
+        getStyleClass().addListener((ListChangeListener<String>) c -> {
+            while(c.next())
+            {
+                if (c.wasAdded())
                 {
-                    if (c.wasAdded())
+                    for (String style : c.getAddedSubList())
                     {
-                        for (String style : c.getAddedSubList())
-                        {
-                            content.getStyleClass().add(style);
-                        }
+                        content.getStyleClass().add(style);
                     }
                 }
             }

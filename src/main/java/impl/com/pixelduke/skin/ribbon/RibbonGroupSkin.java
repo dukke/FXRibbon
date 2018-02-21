@@ -49,12 +49,7 @@ public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
         title.textProperty().bind(control.titleProperty());
         title.getStyleClass().setAll("title");
 
-        control.getNodes().addListener(new ListChangeListener<Node>() {
-            @Override
-            public void onChanged(Change<? extends Node> changed) {
-                buttonsChanged(changed);
-            }
-        });
+        control.getNodes().addListener(this::buttonsChanged);
         updateAddedButtons(control.getNodes());
 
         VBox vBox = new VBox();

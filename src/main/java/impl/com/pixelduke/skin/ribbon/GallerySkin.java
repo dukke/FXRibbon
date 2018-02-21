@@ -54,34 +54,14 @@ public class GallerySkin extends SkinBase<Gallery> {
 
         upButton = new StackPane();
         upButton.getStyleClass().setAll("up-button");
-        upButton.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                mousePressedOnUpButton();
-            }
-        });
+        upButton.setOnMousePressed(event -> mousePressedOnUpButton());
 
         downButton = new StackPane();
         downButton.getStyleClass().setAll("down-button");
-        downButton.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                mousePressedOnDownButton();
-            }
-        });
+        downButton.setOnMousePressed(event -> mousePressedOnDownButton());
 
-        control.selectedItemProperty().addListener(new ChangeListener<GalleryItem>() {
-            @Override
-            public void changed(ObservableValue<? extends GalleryItem> observable, GalleryItem oldValue, GalleryItem newValue) {
-                selectedItemChanged();
-            }
-        });
-        control.getItems().addListener(new ListChangeListener<GalleryItem>() {
-            @Override
-            public void onChanged(Change<? extends GalleryItem> c) {
-                updateItemMap();
-            }
-        });
+        control.selectedItemProperty().addListener((observable, oldValue, newValue) -> selectedItemChanged());
+        control.getItems().addListener((ListChangeListener<GalleryItem>) c -> updateItemMap());
 
         popupButton = new StackPane();
         popupButton.getStyleClass().setAll("popup-button");
@@ -119,12 +99,7 @@ public class GallerySkin extends SkinBase<Gallery> {
         updateButtonEnabledState();
 
         popup = new GalleryPopup(control);
-        popupButton.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                mousePressedOnPopupButton();
-            }
-        });
+        popupButton.setOnMousePressed(event -> mousePressedOnPopupButton());
     }
 
     private void updateItemMap() {
@@ -193,12 +168,7 @@ public class GallerySkin extends SkinBase<Gallery> {
         graphicContainer = itemContainer.get(item);
 
         final StackPane finalGraphicContainer = graphicContainer;
-        graphicContainer.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                mousePressedOnItem(finalGraphicContainer);
-            }
-        });
+        graphicContainer.setOnMousePressed(event -> mousePressedOnItem(finalGraphicContainer));
         graphicsContainer.getChildren().setAll(graphicContainer);
     }
 

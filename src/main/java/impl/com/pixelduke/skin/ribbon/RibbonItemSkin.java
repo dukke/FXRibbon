@@ -28,24 +28,9 @@ public class RibbonItemSkin extends SkinBase<RibbonItem> {
         borderPane = new BorderPane();
         label = new Label();
 
-        control.graphicProperty().addListener(new ChangeListener() {
-            @Override
-            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                graphicChanged();
-            }
-        });
-        control.labelPropery().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                labelChanged();
-            }
-        });
-        control.itemProperty().addListener(new ChangeListener() {
-            @Override
-            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                itemChanged();
-            }
-        });
+        control.graphicProperty().addListener((observable, oldValue, newValue) -> graphicChanged());
+        control.labelPropery().addListener((observable, oldValue, newValue) -> labelChanged());
+        control.itemProperty().addListener((observable, oldValue, newValue) -> itemChanged());
 
         if (control.getLabel() != null || control.getGraphic() != null)
         {

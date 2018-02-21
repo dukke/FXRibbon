@@ -52,12 +52,7 @@ public class GalleryPopup extends Popup {
         setHideOnEscape(true);
         setAutoFix(true);
 
-        galleryItems.addListener(new ListChangeListener<GalleryItem>() {
-            @Override
-            public void onChanged(Change<? extends GalleryItem> c) {
-                updatePopup();
-            }
-        });
+        galleryItems.addListener((ListChangeListener<GalleryItem>) c -> updatePopup());
 
         getContent().add(outerContainer);
 
@@ -65,12 +60,7 @@ public class GalleryPopup extends Popup {
 
         updatePopup();
 
-        gallery.selectedItemProperty().addListener(new ChangeListener<GalleryItem>() {
-            @Override
-            public void changed(ObservableValue<? extends GalleryItem> observable, GalleryItem oldValue, GalleryItem newValue) {
-                selectedItemChanged();
-            }
-        });
+        gallery.selectedItemProperty().addListener((observable, oldValue, newValue) -> selectedItemChanged());
     }
 
     private void selectedItemChanged() {
@@ -118,12 +108,7 @@ public class GalleryPopup extends Popup {
         button.setContentDisplay(ContentDisplay.TOP);
         button.setGraphic(new ImageView(image));
 
-        button.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                gallery.setSelectedItem(item);
-            }
-        });
+        button.setOnAction(event -> gallery.setSelectedItem(item));
 
         buttonGroup.getToggles().add(button);
 

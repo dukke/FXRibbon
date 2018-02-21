@@ -29,28 +29,16 @@ public class RibbonSkin extends SkinBase<Ribbon> {
         tabPane = new TabPane();
         outerContainer = new VBox();
 
-        control.getTabs().addListener(new ListChangeListener<RibbonTab>() {
-            @Override
-            public void onChanged(Change<? extends RibbonTab> changed) {
-                tabsChanged(changed);
-            }
-        });
+        control.getTabs().addListener(this::tabsChanged);
         updateAddedRibbonTabs(control.getTabs());
+
         outerContainer.getStyleClass().setAll("outer-container");
         outerContainer.getChildren().addAll(control.getQuickAccessBar(), tabPane);
         getChildren().add(outerContainer);
-        control.selectedRibbonTabProperty().addListener(new ChangeListener() {
-            @Override
-            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                tabPane.getSelectionModel().select((RibbonTab)newValue);
-            }
-        });
-        tabPane.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Tab>() {
-            @Override
-            public void changed(ObservableValue<? extends Tab> observable, Tab oldValue, Tab newValue) {
-                control.setSelectedRibbonTab((RibbonTab)tabPane.getSelectionModel().getSelectedItem());
-            }
-        });
+
+        control.selectedRibbonTabProperty().addListener((observable, oldValue, newValue) -> tabPane.getSelectionModel().select((RibbonTab)newValue));
+
+        tabPane.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> control.setSelectedRibbonTab((RibbonTab)tabPane.getSelectionModel().getSelectedItem()));
     }
 
     private void updateAddedRibbonTabs(Collection<? extends RibbonTab> ribbonTabs) {
