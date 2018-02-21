@@ -1,5 +1,6 @@
 package com.pixelduke.control.ribbon;
 
+import com.pixelduke.control.Ribbon;
 import impl.com.pixelduke.skin.ribbon.GallerySkin;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ObjectProperty;
@@ -70,6 +71,6 @@ public class Gallery extends Control {
 
     @Override
     public String getUserAgentStylesheet() {
-        return getClass().getResource("resource/fxribbon.css").toExternalForm();
+        return Ribbon.class.getResource("fxribbon.css").toExternalForm();
     }
 }

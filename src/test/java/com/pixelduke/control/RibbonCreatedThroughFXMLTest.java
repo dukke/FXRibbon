@@ -12,18 +12,14 @@ import java.net.URL;
  * Created by pedro_000 on 1/22/14.
  */
 public class RibbonCreatedThroughFXMLTest extends Application {
-    static final String RESOURCE = "java/com/pixelduke/control/RibbonFXML.fxml";
-    static final String STYLE_SHEET = "src/main/resources/fxribbon.css";
+    private static final String RESOURCE = "RibbonFXML.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception
     {
         URL resource = getClass().getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
-        root.getStylesheets().add(getClass().getResource(STYLE_SHEET).toExternalForm());
         Scene scene = new Scene(root);
-
-//        ScenicView.show(scene);
 
         primaryStage.setScene(scene);
         primaryStage.show();

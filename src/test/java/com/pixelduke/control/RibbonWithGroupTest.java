@@ -1,7 +1,5 @@
 package com.pixelduke.control;
 
-import com.pixelduke.control.ribbon.Column;
-import com.pixelduke.control.Ribbon;
 import com.pixelduke.control.ribbon.RibbonGroup;
 import com.pixelduke.control.ribbon.RibbonTab;
 import javafx.application.Application;
@@ -26,8 +24,8 @@ public class RibbonWithGroupTest extends Application {
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbon);
 
-        Image storeImage = new Image(getClass().getResourceAsStream("store.png"));
-        Button storeButton = new Button("Store", new ImageView(storeImage));
+//        Image storeImage = new Image(getClass().getResourceAsStream("store.png"));
+        Button storeButton = new Button("Store");
         storeButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(storeButton);
 

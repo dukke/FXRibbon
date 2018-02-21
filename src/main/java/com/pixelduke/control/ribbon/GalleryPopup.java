@@ -1,5 +1,6 @@
 package com.pixelduke.control.ribbon;
 
+import com.pixelduke.control.Ribbon;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
@@ -21,8 +22,6 @@ import java.util.HashMap;
  * Created by pedro_000 on 1/21/2015.
  */
 public class GalleryPopup extends Popup {
-    static final String STYLE_SHEET = "resource/fxribbon.css";
-
     private ObservableList<GalleryItem> galleryItems;
 
     private VBox outerContainer;
@@ -43,7 +42,7 @@ public class GalleryPopup extends Popup {
         galleryItemButton = new HashMap<>();
 
         outerContainer = new VBox();
-        outerContainer.getStylesheets().add(getClass().getResource(STYLE_SHEET).toExternalForm());
+        outerContainer.getStylesheets().add(Ribbon.class.getResource("fxribbon.css").toExternalForm());
 
         categoryContainer = new HashMap<>();
 

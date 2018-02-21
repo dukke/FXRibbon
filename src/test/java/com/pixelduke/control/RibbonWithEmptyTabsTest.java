@@ -1,6 +1,5 @@
 package com.pixelduke.control;
 
-import com.pixelduke.control.Ribbon;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;

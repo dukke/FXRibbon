@@ -1,6 +1,5 @@
 package com.pixelduke.control;
 
-import com.pixelduke.control.Ribbon;
 import com.pixelduke.control.ribbon.RibbonGroup;
 import com.pixelduke.control.ribbon.RibbonTab;
 import javafx.application.Application;
@@ -25,31 +24,31 @@ public class RibbonWithGroupsTest extends Application{
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbon);
 
-        Image iconImage = new Image(getClass().getResourceAsStream("play.png"));
-        Button iconButton = new Button("Play", new ImageView(iconImage));
+//        Image iconImage = new Image(getClass().getResourceAsStream("play.png"));
+        Button iconButton = new Button("Play");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-        iconImage = new Image(getClass().getResourceAsStream("stop.png"));
-        iconButton = new Button("Stop", new ImageView(iconImage));
+//        iconImage = new Image(getClass().getResourceAsStream("stop.png"));
+        iconButton = new Button("Stop");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-        iconImage = new Image(getClass().getResourceAsStream("pause.png"));
-        iconButton = new Button("Pause", new ImageView(iconImage));
+//        iconImage = new Image(getClass().getResourceAsStream("pause.png"));
+        iconButton = new Button("Pause");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
-        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/fastForward.png"));
-        iconButton = new Button("Next", new ImageView(iconImage));
+//        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/fastForward.png"));
+        iconButton = new Button("Next");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 
         ribbonTab.getRibbonGroups().add(ribbonGroup);
 
         ribbonGroup = new RibbonGroup();
-        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/save.png"));
-        iconButton = new Button("Save Results", new ImageView(iconImage));
+//        iconImage = new Image(getClass().getResourceAsStream("java/com/pixelduke/control/save.png"));
+        iconButton = new Button("Save Results");
         iconButton.setContentDisplay(ContentDisplay.LEFT);
         ribbonGroup.getNodes().add(iconButton);
 

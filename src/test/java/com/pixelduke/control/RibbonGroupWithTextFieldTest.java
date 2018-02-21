@@ -1,6 +1,5 @@
 package com.pixelduke.control;
 
-import com.pixelduke.control.ribbon.Column;
 import com.pixelduke.control.ribbon.RibbonGroup;
 import com.pixelduke.control.ribbon.RibbonTextField;
 import javafx.application.Application;

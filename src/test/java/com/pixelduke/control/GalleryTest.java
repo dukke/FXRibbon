@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.scenicview.ScenicView;
+//import org.scenicview.ScenicView;
 
 import java.net.URL;
 
@@ -13,7 +13,7 @@ import java.net.URL;
  * Created by pedro_000 on 1/13/2015.
  */
 public class GalleryTest extends Application {
-    static final String RESOURCE = "java/com/pixelduke/control/GalleryTest.fxml";
+    private static final String RESOURCE = "GalleryTest.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -21,7 +21,7 @@ public class GalleryTest extends Application {
         Parent root = FXMLLoader.load(resource);
         Scene scene = new Scene(root);
 
-        ScenicView.show(scene);
+//        ScenicView.show(scene);
 
         primaryStage.setScene(scene);
         primaryStage.show();
