@@ -38,8 +38,8 @@ import javafx.scene.control.Skin;
 public class QuickAccessBar extends Control {
     private final static String DEFAULT_STYLE_CLASS = "quick-access-bar";
 
-    ObservableList<Button> buttons;
-    ObservableList<Button> rightButtons;
+    private final ObservableList<Button> buttons;
+    private final ObservableList<Button> rightButtons;
 
     public QuickAccessBar()
     {

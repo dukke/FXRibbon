@@ -28,8 +28,6 @@
 package impl.com.pixelduke.skin.ribbon;
 
 import com.pixelduke.control.ribbon.RibbonItem;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.SkinBase;
@@ -38,8 +36,8 @@ import javafx.scene.layout.StackPane;
 
 public class RibbonItemSkin extends SkinBase<RibbonItem> {
 
-    BorderPane borderPane;
-    Label label;
+    private final BorderPane borderPane;
+    private final Label label;
 
     /**
      * Constructor for all SkinBase instances.

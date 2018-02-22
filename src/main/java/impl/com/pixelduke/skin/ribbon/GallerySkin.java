@@ -30,15 +30,11 @@ package impl.com.pixelduke.skin.ribbon;
 import com.pixelduke.control.ribbon.Gallery;
 import com.pixelduke.control.ribbon.GalleryItem;
 import com.pixelduke.control.ribbon.GalleryPopup;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
-import javafx.event.EventHandler;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.SkinBase;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
@@ -47,21 +43,21 @@ import javafx.scene.layout.VBox;
 import java.util.HashMap;
 
 public class GallerySkin extends SkinBase<Gallery> {
-    public static final double CONTENT_HEIGHT = RibbonGroupSkin.CONTENT_HEIGHT - 20;
+    private static final double CONTENT_HEIGHT = RibbonGroupSkin.CONTENT_HEIGHT - 20;
 
-    private StackPane upButton, downButton, popupButton;
-    private HBox graphicsContainer;
+    private final StackPane upButton, downButton, popupButton;
+    private final HBox graphicsContainer;
 
-    private Region upButtonGraphic, downButtonGraphic, popupButtonGraphic;
+    private final Region upButtonGraphic, downButtonGraphic, popupButtonGraphic;
 
     private StackPane selectedContainer;
 
-    private HashMap<GalleryItem, StackPane> itemContainer;
-    private HashMap<StackPane, GalleryItem> containerItem;
+    private final HashMap<GalleryItem, StackPane> itemContainer;
+    private final HashMap<StackPane, GalleryItem> containerItem;
 
     private int scrollIndex;
 
-    private GalleryPopup popup;
+    private final GalleryPopup popup;
 
     /**
      * Constructor for all SkinBase instances.
@@ -273,8 +269,7 @@ public class GallerySkin extends SkinBase<Gallery> {
         popupButton.setLayoutX(CONTENT_HEIGHT * getSkinnable().getNumOfVisibleItems() - 1);
         popupButton.setLayoutY(upButtonHeight + downButtonHeight);
 
-        final double graphicContainerHeight = CONTENT_HEIGHT;
-        graphicsContainer.resize(CONTENT_HEIGHT * getSkinnable().getNumOfVisibleItems(), graphicContainerHeight);
+        graphicsContainer.resize(CONTENT_HEIGHT * getSkinnable().getNumOfVisibleItems(), CONTENT_HEIGHT);
     }
 
     @Override

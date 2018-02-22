@@ -37,11 +37,11 @@ import javafx.scene.control.Control;
 import javafx.scene.control.Skin;
 
 public class RibbonItem extends Control {
-    private static String DEFAULT_STYLE_CLASS = "ribbon-item";
+    private final static String DEFAULT_STYLE_CLASS = "ribbon-item";
 
-    private ObjectProperty<Node> graphic;
-    private StringProperty label;
-    private ObjectProperty<Node> item;
+    private final ObjectProperty<Node> graphic;
+    private final StringProperty label;
+    private final ObjectProperty<Node> item;
 
     public RibbonItem()
     {

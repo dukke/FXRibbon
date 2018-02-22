@@ -40,12 +40,12 @@ import javafx.scene.control.Control;
 import javafx.scene.control.Skin;
 
 public class Gallery extends Control {
-    private static String DEFAULT_STYLE_CLASS = "gallery";
+    private final static String DEFAULT_STYLE_CLASS = "gallery";
 
-    private ObservableList<GalleryItem> items;
-    private ObjectProperty<GalleryItem> selectedItem;
+    private final ObservableList<GalleryItem> items;
+    private final ObjectProperty<GalleryItem> selectedItem;
 
-    private IntegerProperty numOfVisibleItems = new SimpleIntegerProperty(1);
+    private final IntegerProperty numOfVisibleItems = new SimpleIntegerProperty(1);
 
     public Gallery()
     {

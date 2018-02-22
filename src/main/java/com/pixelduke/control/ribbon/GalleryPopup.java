@@ -29,12 +29,8 @@
 package com.pixelduke.control.ribbon;
 
 import com.pixelduke.control.Ribbon;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.control.*;
@@ -47,17 +43,17 @@ import javafx.stage.Popup;
 import java.util.HashMap;
 
 public class GalleryPopup extends Popup {
-    private ObservableList<GalleryItem> galleryItems;
+    private final ObservableList<GalleryItem> galleryItems;
 
-    private VBox outerContainer;
+    private final VBox outerContainer;
 
-    private ToggleGroup buttonGroup;
+    private final ToggleGroup buttonGroup;
 
-    private HashMap<String, FlowPane> categoryContainer;
+    private final HashMap<String, FlowPane> categoryContainer;
 
-    private Gallery gallery;
+    private final Gallery gallery;
 
-    private HashMap<GalleryItem, ToggleButton> galleryItemButton;
+    private final HashMap<GalleryItem, ToggleButton> galleryItemButton;
 
     public GalleryPopup(Gallery gallery)
     {

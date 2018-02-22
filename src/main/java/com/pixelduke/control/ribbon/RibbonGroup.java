@@ -39,8 +39,8 @@ import javafx.scene.control.Skin;
 public class RibbonGroup extends Labeled {
     private final static String DEFAULT_STYLE_CLASS = "ribbon-group";
 
-    private ObservableList<Node> nodes;
-    private SimpleStringProperty title;
+    private final ObservableList<Node> nodes;
+    private final SimpleStringProperty title;
 
     public RibbonGroup()
     {

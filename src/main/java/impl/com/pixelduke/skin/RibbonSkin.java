@@ -29,19 +29,16 @@ package impl.com.pixelduke.skin;
 
 import com.pixelduke.control.Ribbon;
 import com.pixelduke.control.ribbon.RibbonTab;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
 import javafx.scene.control.SkinBase;
-import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.VBox;
 
 import java.util.Collection;
 
 public class RibbonSkin extends SkinBase<Ribbon> {
-    VBox outerContainer;
-    private TabPane tabPane;
+    private final VBox outerContainer;
+    private final TabPane tabPane;
 
     /**
      * Constructor for all SkinBase instances.

@@ -42,12 +42,12 @@ import javafx.scene.layout.VBox;
 import java.util.Collection;
 
 public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
-    public static int CONTENT_HEIGHT = 112;
-    public static int DEFAULT_SPACING = 0;
+    public final static int CONTENT_HEIGHT = 112;
+    private final static int DEFAULT_SPACING = 0;
 
-    private HBox content;
-    private HBox container;
-    private LabeledText title;
+    private final HBox content;
+    private final HBox container;
+    private final LabeledText title;
 
     /**
      * Constructor for all SkinBase instances.

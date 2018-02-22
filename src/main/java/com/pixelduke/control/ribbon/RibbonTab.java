@@ -39,9 +39,9 @@ public class RibbonTab extends Tab {
 //    public static final int CONTENT_HEIGHT = 70;
     private static final String DEFAULT_STYLE_CLASS = "ribbon-tab";
 
-    HBox content;
+    private HBox content;
 
-    ObservableList<RibbonGroup> ribbonGroups;
+    private ObservableList<RibbonGroup> ribbonGroups;
 
     private String contextualColor;
 

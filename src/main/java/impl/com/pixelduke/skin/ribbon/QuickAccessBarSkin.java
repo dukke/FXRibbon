@@ -37,9 +37,9 @@ import javafx.scene.layout.HBox;
 import java.util.Collection;
 
 public class QuickAccessBarSkin extends SkinBase<QuickAccessBar> {
-    BorderPane outerContainer;
-    HBox buttonContainer;
-    HBox rightButtons;
+    private final BorderPane outerContainer;
+    private final HBox buttonContainer;
+    private final HBox rightButtons;
 
     /**
      * Constructor for all SkinBase instances.

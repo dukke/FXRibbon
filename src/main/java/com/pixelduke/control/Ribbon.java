@@ -43,10 +43,10 @@ import java.util.HashMap;
 public class Ribbon extends Control{
     private final static String DEFAULT_STYLE_CLASS = "ribbon";
 
-    private ObservableList<String> tabTitles;
-    private ObservableList<RibbonTab> tabs;
+    private final ObservableList<String> tabTitles;
+    private final ObservableList<RibbonTab> tabs;
 
-    private HashMap<String, RibbonTab> titleToRibbonTab;
+    private final HashMap<String, RibbonTab> titleToRibbonTab;
 
     private QuickAccessBar quickAccessBar;
 
@@ -120,7 +120,7 @@ public class Ribbon extends Control{
 
     /** Selected Ribbon Tab **/
 
-    private SimpleObjectProperty<RibbonTab> selectedRibbonTab = new SimpleObjectProperty<>();
+    private final SimpleObjectProperty<RibbonTab> selectedRibbonTab = new SimpleObjectProperty<>();
 
     public SimpleObjectProperty selectedRibbonTabProperty()
     {

@@ -27,23 +27,18 @@
 
 package impl.com.pixelduke.skin.ribbon;
 
-import com.sun.javafx.scene.control.behavior.TextFieldBehavior;
 import com.sun.javafx.scene.control.skin.TextFieldSkin;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
 
 public class TextFieldWithButtonSkin extends TextFieldSkin{
-    private StackPane rightButton;
-    private Region rightButtonGraphic;
+    private final StackPane rightButton;
+    private final Region rightButtonGraphic;
 
-    protected TextField textField;
+    protected final TextField textField;
 
     public TextFieldWithButtonSkin(TextField textField) {
         super(textField);

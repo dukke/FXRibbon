@@ -28,11 +28,6 @@
 
 package com.pixelduke.control.ribbon;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
-import javafx.collections.ObservableList;
-import javafx.geometry.Insets;
-import javafx.scene.Node;
 import javafx.scene.layout.VBox;
 
 public class Column extends VBox{
