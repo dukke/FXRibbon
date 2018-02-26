@@ -32,6 +32,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.scenicview.ScenicView;
 
 import java.net.URL;
 
@@ -44,6 +45,8 @@ public class RibbonCreatedThroughFXMLTest extends Application {
         URL resource = RibbonCreatedThroughFXMLTest.class.getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
         Scene scene = new Scene(root);
+
+//        ScenicView.show(scene);
 
         primaryStage.setScene(scene);
         primaryStage.show();

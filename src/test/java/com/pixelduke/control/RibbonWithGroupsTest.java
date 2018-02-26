@@ -46,32 +46,27 @@ public class RibbonWithGroupsTest extends Application{
         RibbonGroup ribbonGroup = new RibbonGroup();
         rootNode.setCenter(ribbon);
 
-//        Image iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("play.png"));
-        Button iconButton = new Button("Play");
-        iconButton.setContentDisplay(ContentDisplay.LEFT);
+        Button iconButton = new Button("Play", new Icon(AwesomeIcon.PLAY));
+        iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("stop.png"));
-        iconButton = new Button("Stop");
-        iconButton.setContentDisplay(ContentDisplay.LEFT);
+        iconButton = new Button("Stop", new Icon(AwesomeIcon.STOP));
+        iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("pause.png"));
-        iconButton = new Button("Pause");
-        iconButton.setContentDisplay(ContentDisplay.LEFT);
+        iconButton = new Button("Pause", new Icon(AwesomeIcon.PAUSE));
+        iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
-//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("java/com/pixelduke/control/fastForward.png"));
         iconButton = new Button("Next");
-        iconButton.setContentDisplay(ContentDisplay.LEFT);
+        iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
         ribbonTab.getRibbonGroups().add(ribbonGroup);
 
         ribbonGroup = new RibbonGroup();
-//        iconImage = new Image(RibbonWithGroupsTest.class.getResourceAsStream("java/com/pixelduke/control/save.png"));
-        iconButton = new Button("Save Results");
-        iconButton.setContentDisplay(ContentDisplay.LEFT);
+        iconButton = new Button("Save Results", new Icon(AwesomeIcon.SAVE));
+        iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
         ribbonTab.getRibbonGroups().add(ribbonGroup);

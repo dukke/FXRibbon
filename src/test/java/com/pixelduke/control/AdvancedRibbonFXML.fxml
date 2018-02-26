@@ -39,6 +39,7 @@
   ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 
+<?import com.pixelduke.control.Icon?>
 <BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
     <top>
         <Ribbon>
@@ -49,38 +50,22 @@
                             <nodes>
                                 <Button contentDisplay="TOP" text="Open" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@folder_action_open.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="FOLDER_OPEN_ALT" />
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="New" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@document.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="FILE_ALT" />
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@save.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="SAVE" />
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save as" wrapText="true" alignment="BOTTOM_LEFT" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@save_as.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="SAVE" />
                                     </graphic>
                                 </Button>
                             </nodes>
@@ -178,11 +163,7 @@
                                 <Column>
                                     <ToggleButton text="locked" styleClass="normal" minWidth="-Infinity">
                                         <graphic>
-                                            <ImageView>
-                                                <image>
-                                                    <Image url="@security_lock.png" />
-                                                </image>
-                                            </ImageView>
+                                            <Icon value="LOCK" size="1em"/>
                                         </graphic>
                                     </ToggleButton>
                                 </Column>
@@ -192,29 +173,17 @@
                             <nodes>
                                 <Button contentDisplay="TOP" text="Web" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@internet.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="GLOBE" />
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="About" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@legal_copyright.png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="INFO" />
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Help" wrapText="true" styleClass="big">
                                     <graphic>
-                                        <ImageView>
-                                            <image>
-                                                <Image url="@help (2).png" />
-                                            </image>
-                                        </ImageView>
+                                        <Icon value="QUESTION" />
                                     </graphic>
                                 </Button>
                             </nodes>

@@ -27,38 +27,67 @@
 
 package com.pixelduke.control;
 
-import com.pixelduke.control.ribbon.RibbonGroup;
-import com.pixelduke.control.ribbon.RibbonTab;
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
+import javafx.beans.property.*;
+import javafx.scene.control.Label;
+import javafx.scene.text.Font;
 
-public class RibbonWithGroupTest extends Application {
+public class Icon extends Label{
+	private final static String DEFAULT_ICON_SIZE = "3em";
 
-    @Override
-    public void start(Stage primaryStage) {
-        BorderPane rootNode = new BorderPane();
-        Ribbon ribbon = new Ribbon();
-        RibbonTab ribbonTab = new RibbonTab("Test");
-        RibbonGroup ribbonGroup = new RibbonGroup();
-        rootNode.setTop(ribbon);
+	static {
+		Font.loadFont(Icon.class.getResource("fontawesome-webfont.ttf").toExternalForm(), 10);
+	}
 
-        Button storeButton = new Button("Store", new Icon(AwesomeIcon.SHOPPING_CART));
-        storeButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(storeButton);
+	public Icon() {
+		setSize(DEFAULT_ICON_SIZE);
+	}
 
-        ribbonTab.getRibbonGroups().add(ribbonGroup);
-        ribbon.getTabs().add(ribbonTab);
+	public Icon(AwesomeIcon icon){
+		this();
+		setValue(icon);
+	}
 
-        Scene scene = new Scene(rootNode);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+	public Icon(AwesomeIcon icon, String size){
+		this(icon);
+		setSize(size);
+	}
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+	private final ObjectProperty<AwesomeIcon> valueProperty = new SimpleObjectProperty<AwesomeIcon>()
+	{
+		@Override
+		protected void invalidated() {
+			setText(get().toString());
+		}
+	};
+
+	public AwesomeIcon getValue() {
+		return valueProperty.get();
+	}
+
+	public void setValue(final AwesomeIcon value) {
+		valueProperty.set(value);
+	}
+
+	public ObjectProperty<AwesomeIcon> valueProperty() {
+		return valueProperty;
+	}
+
+	private final StringProperty sizeProperty = new SimpleStringProperty() {
+		@Override
+		protected void invalidated() {
+			setStyle("-fx-font-family: FontAwesome; -fx-font-size: " + get() + ";");
+		}
+	};
+
+	public String getSize() {
+		return sizeProperty().get();
+	}
+
+	public void setSize(final String size) {
+		sizeProperty.set(size);
+	}
+
+	public StringProperty sizeProperty() {
+		return sizeProperty;
+	}
 }
