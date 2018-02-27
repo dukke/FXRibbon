@@ -33,7 +33,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import org.scenicview.ScenicView;
 
 public class RibbonGroupWithTextFieldTest extends Application {
 
@@ -47,7 +46,7 @@ public class RibbonGroupWithTextFieldTest extends Application {
         ribbonGroup.getNodes().add(new RibbonTextField("Timeout(seconds):"));
 
         Scene scene = new Scene(rootNode);
-        ScenicView.show(scene);
+//        ScenicView.show(scene);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
