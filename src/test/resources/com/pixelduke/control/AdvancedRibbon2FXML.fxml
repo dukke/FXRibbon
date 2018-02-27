@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.pixelduke.control.Ribbon?>
+<?import com.pixelduke.control.ribbon.RibbonTab?>
+<?import com.pixelduke.control.ribbon.RibbonGroup?>
+<?import com.pixelduke.control.ribbon.Column?>
+<?import com.pixelduke.control.ribbon.RibbonItem?>
+<?import javafx.collections.*?>
+
+<!--
+  ~ Copyright (c) 2016, 2018 Pixel Duke (Pedro Duque Vieira - www.pixelduke.com)
+  ~  All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~  modification, are permitted provided that the following conditions are met:
+  ~    * Redistributions of source code must retain the above copyright
+  ~  notice, this list of conditions and the following disclaimer.
+  ~    * Redistributions in binary form must reproduce the above copyright
+  ~  notice, this list of conditions and the following disclaimer in the
+  ~  documentation and/or other materials provided with the distribution.
+  ~    * Neither the name of Pixel Duke, any associated website, nor the
+  ~  names of its contributors may be used to endorse or promote products
+  ~  derived from this software without specific prior written permission.
+  ~
+  ~  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+  ~  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~  DISCLAIMED. IN NO EVENT SHALL PIXEL DUKE BE LIABLE FOR ANY
+  ~  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ~  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<?import com.pixelduke.control.Icon?>
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Ribbon>
+            <tabs>
+                <RibbonTab text="HOME">
+                    <ribbonGroups>
+                        <RibbonGroup title="File">
+                            <nodes>
+                                <Button contentDisplay="TOP" text="Open" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Open_48px_3.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="New" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_File_48px_1.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="Save" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Save_48px.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="Save as" wrapText="true" alignment="BOTTOM_LEFT" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Save_as_48px.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </nodes>
+                        </RibbonGroup>
+                        <RibbonGroup title="Preferences">
+                            <nodes>
+                                <Column>
+                                    <RibbonItem>
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="Office Silver 2007" />
+                                                        <String fx:value="Office Blue 2007" />
+                                                        <String fx:value="Nebula Brick Wall" />
+                                                        <String fx:value="Business Blue Steel" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
+
+                                    <RibbonItem>
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="English (UK)" />
+                                                        <String fx:value="Portugues (PT)" />
+                                                        <String fx:value="Portugues (BR)" />
+                                                        <String fx:value="English (USA)" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
+                                </Column>
+                                <Column>
+                                    <RibbonItem label="Angles:">
+                                        <item>
+                                            <ComboBox>
+                                                <items>
+                                                    <FXCollections fx:factory="observableArrayList">
+                                                        <String fx:value="Radians" />
+                                                        <String fx:value="Degrees" />
+                                                    </FXCollections>
+                                                </items>
+                                            </ComboBox>
+                                        </item>
+                                    </RibbonItem>
+                                    <RibbonItem label="Decimal Places:">
+                                        <item>
+                                            <TextField text="2" prefWidth="60" > </TextField>
+                                        </item>
+
+                                    </RibbonItem>
+                                    <RibbonItem label="Exponential Threshold:" >
+                                        <item>
+                                                <TextField text="3" prefWidth="60"> </TextField>
+                                        </item>
+                                    </RibbonItem>
+                                </Column>
+
+                                <Column>
+                                    <ToggleButton text="locked" styleClass="normal" minWidth="-Infinity">
+                                        <graphic>
+                                            <ImageView>
+                                                <Image url="@icons8_Lock_16px.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </ToggleButton>
+                                </Column>
+                            </nodes>
+                        </RibbonGroup>
+                        <RibbonGroup title="Help">
+                            <nodes>
+                                <Button contentDisplay="TOP" text="Web" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Globe_48px.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="About" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Info_48px.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button contentDisplay="TOP" text="Help" wrapText="true" styleClass="big">
+                                    <graphic>
+                                        <ImageView>
+                                            <Image url="@icons8_Help_48px.png" />
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </nodes>
+                        </RibbonGroup>
+                    </ribbonGroups>
+                </RibbonTab>
+                <RibbonTab text="INDEPENDENT VARIABLE">
+                </RibbonTab>
+                <RibbonTab text="MODEL">
+                </RibbonTab>
+                <RibbonTab text="CHART">
+                </RibbonTab>
+                <RibbonTab text="TABLE">
+                </RibbonTab>
+                <RibbonTab text="ANIMATION">
+                </RibbonTab>
+                <RibbonTab text="NOTES">
+                </RibbonTab>
+                <RibbonTab text="SERIES" contextualColor="blue">
+                </RibbonTab>
+            </tabs>
+        </Ribbon>
+
+    </top>
+</BorderPane>

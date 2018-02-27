@@ -40,10 +40,6 @@ scenicView.properties
 # libraries includind JUnit and ScenicView
 lib/
 
-# proprietary images
-*.png
-*.gif
-
 # Gradle
 .gradle/
 .nb-gradle/
