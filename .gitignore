@@ -43,3 +43,7 @@ lib/
 # proprietary images
 *.png
 *.gif
+
+# Gradle
+.gradle/
+.nb-gradle/
