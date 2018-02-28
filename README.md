@@ -1,9 +1,17 @@
 # FXRibbon
 Ribbon control for JavaFX, based on [Microsoft Ribbon](https://en.wikipedia.org/wiki/Ribbon_(computing)).
 
+## Documentation
+For more information check [http://www.pixelduke.com/fxribbon](http://www.pixelduke.com/fxribbon)
+
+## Issues and Contributions
+Issues can be reported to the Issue tracker.  
+Contributions can be submitted via Pull requests.
+
 ## Controls used inside Ribbon
 The controls used inside the ribbon (e.g. comboboxs, texfield, etc)  are based on JMetro, visit [http://www.pixelduke.com/jmetro](http://www.pixelduke.com/jmetro)
-for more information
+for more information.  
+For now the option has been to, for the most commonly used controls inside the ribbon, have these styles available through this library and so avoid another dependency for most use cases. 
 
 ## Icons used on test apps
 Kudos icons8 for the icons used in the test apps, visit [https://icons8.com](https://icons8.com) for more information.
