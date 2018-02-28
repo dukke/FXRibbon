@@ -39,7 +39,6 @@
   ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 
-<?import com.pixelduke.control.Icon?>
 <BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
     <top>
         <Ribbon>
@@ -51,28 +50,28 @@
                                 <Button contentDisplay="TOP" text="Open" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Open_48px_3.png" />
+                                            <Image url="@icons8_Open_32px_3.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="New" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_File_48px_1.png" />
+                                            <Image url="@icons8_File_32px_1.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Save_48px.png" />
+                                            <Image url="@icons8_Save_32px.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save as" wrapText="true" alignment="BOTTOM_LEFT" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Save_as_48px.png" />
+                                            <Image url="@icons8_Save_as_32px.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
@@ -153,21 +152,21 @@
                                 <Button contentDisplay="TOP" text="Web" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Globe_48px.png" />
+                                            <Image url="@icons8_Globe_32px.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="About" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Info_48px.png" />
+                                            <Image url="@icons8_Info_32px.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Help" wrapText="true" styleClass="big">
                                     <graphic>
                                         <ImageView>
-                                            <Image url="@icons8_Help_48px.png" />
+                                            <Image url="@icons8_Help_32px.png" />
                                         </ImageView>
                                     </graphic>
                                 </Button>

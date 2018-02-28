@@ -3,8 +3,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <?import com.pixelduke.control.Ribbon?>
 <?import com.pixelduke.control.ribbon.RibbonTab?>
 <?import com.pixelduke.control.ribbon.RibbonGroup?>
@@ -39,7 +37,7 @@
   ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 
-<?import com.pixelduke.control.Icon?>
+<?import com.pixelduke.control.util.Icon?>
 <BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
     <top>
         <Ribbon>
@@ -74,14 +72,6 @@
                             <nodes>
                                 <Column>
                                     <RibbonItem>
-                                        <graphic>
-                                            <ImageView>
-                                                <image>
-                                                    <Image url="@skins.png" />
-                                                </image>
-                                            </ImageView>
-                                        </graphic>
-
                                         <item>
                                             <ComboBox>
                                                 <items>
@@ -113,14 +103,6 @@
                                 </Column>
                                 <Column>
                                     <RibbonItem label="Angles:">
-                                        <graphic>
-                                            <ImageView>
-                                                <image>
-                                                    <Image url="@angulos16x16_2.png" />
-                                                </image>
-                                            </ImageView>
-                                        </graphic>
-
                                         <item>
                                             <ComboBox>
                                                 <items>
@@ -133,27 +115,12 @@
                                         </item>
                                     </RibbonItem>
                                     <RibbonItem label="Decimal Places:">
-                                        <graphic>
-                                            <ImageView>
-                                                <image>
-                                                    <Image url="@decimal places.png" />
-                                                </image>
-                                            </ImageView>
-                                        </graphic>
                                         <item>
                                             <TextField text="2" prefWidth="60" > </TextField>
                                         </item>
 
                                     </RibbonItem>
                                     <RibbonItem label="Exponential Threshold:" >
-                                                    <graphic>
-                                                        <ImageView>
-                                                            <image>
-                                                                <Image url="@ExponentialThreshold.png" />
-                                                            </image>
-                                                        </ImageView>
-                                                    </graphic>
-
                                         <item>
                                                 <TextField text="3" prefWidth="60"> </TextField>
                                         </item>

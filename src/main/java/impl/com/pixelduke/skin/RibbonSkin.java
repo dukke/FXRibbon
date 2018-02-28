@@ -58,7 +58,6 @@ public class RibbonSkin extends SkinBase<Ribbon> {
         getChildren().add(outerContainer);
 
         control.selectedRibbonTabProperty().addListener((observable, oldValue, newValue) -> tabPane.getSelectionModel().select((RibbonTab)newValue));
-
         tabPane.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> control.setSelectedRibbonTab((RibbonTab)tabPane.getSelectionModel().getSelectedItem()));
     }
 

@@ -40,7 +40,7 @@ public class RibbonGroupWithTextFieldTest extends Application {
     public void start(Stage primaryStage) {
         BorderPane rootNode = new BorderPane();
         RibbonGroup ribbonGroup = new RibbonGroup();
-        rootNode.setCenter(ribbonGroup);
+        rootNode.setTop(ribbonGroup);
 
         ribbonGroup.getNodes().add(new RibbonTextField("Fake IP Address:"));
         ribbonGroup.getNodes().add(new RibbonTextField("Timeout(seconds):"));

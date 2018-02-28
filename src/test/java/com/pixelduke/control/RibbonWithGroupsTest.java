@@ -29,6 +29,8 @@ package com.pixelduke.control;
 
 import com.pixelduke.control.ribbon.RibbonGroup;
 import com.pixelduke.control.ribbon.RibbonTab;
+import com.pixelduke.control.util.AwesomeIcon;
+import com.pixelduke.control.util.Icon;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -44,7 +46,8 @@ public class RibbonWithGroupsTest extends Application{
         Ribbon ribbon = new Ribbon();
         RibbonTab ribbonTab = new RibbonTab("Test");
         RibbonGroup ribbonGroup = new RibbonGroup();
-        rootNode.setCenter(ribbon);
+
+        rootNode.setTop(ribbon);
 
         Button iconButton = new Button("Play", new Icon(AwesomeIcon.PLAY));
         iconButton.setContentDisplay(ContentDisplay.TOP);

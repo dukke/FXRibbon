@@ -1,8 +1,8 @@
 /*
- *  Copyright (c) 2016, 2018 Pixel Duke (Pedro Duque Vieira - www.pixelduke.com)
+ * Copyright (c) 2016, 2018 Pixel Duke (Pedro Duque Vieira - www.pixelduke.com)
  *  All rights reserved.
  *
- *  Redistribution and use in source and binary forms, with or without
+ * Redistribution and use in source and binary forms, with or without
  *  modification, are permitted provided that the following conditions are met:
  *    * Redistributions of source code must retain the above copyright
  *  notice, this list of conditions and the following disclaimer.
@@ -25,7 +25,7 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.pixelduke.control;
+package com.pixelduke.control.util;
 
 /**
  * Icon Enum based on Font-Awesome v4.1.0 and on Jens Deters FontAwesomeFX

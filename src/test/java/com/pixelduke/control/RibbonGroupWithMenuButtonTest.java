@@ -41,7 +41,8 @@ public class RibbonGroupWithMenuButtonTest extends Application {
     public void start(Stage primaryStage) {
         BorderPane rootNode = new BorderPane();
         RibbonGroup ribbonGroup = new RibbonGroup();
-        rootNode.setCenter(ribbonGroup);
+
+        rootNode.setTop(ribbonGroup);
 
         MenuButton number = new MenuButton("Number");
 

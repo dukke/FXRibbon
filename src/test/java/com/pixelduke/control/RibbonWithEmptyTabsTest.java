@@ -39,7 +39,8 @@ public class RibbonWithEmptyTabsTest extends Application{
         BorderPane rootNode = new BorderPane();
         Ribbon ribbon = new Ribbon();
         ribbon.getTabTitles().addAll("Home", "Scrape", "Filter", "Options", "Help");
-        rootNode.setCenter(ribbon);
+
+        rootNode.setTop(ribbon);
 
         Scene scene = new Scene(rootNode);
         primaryStage.setScene(scene);
