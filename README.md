@@ -1,11 +1,12 @@
 # FXRibbon
-Ribbon control for JavaFX, based on [Microsoft Ribbon](https://en.wikipedia.org/wiki/Ribbon_(computing)).
+Ribbon control for JavaFX, based on [Microsoft Ribbon](https://en.wikipedia.org/wiki/Ribbon_(computing)).  
+If you want to support the development of this library consider a [donation or sponsoring a feature or bug fix](www.pixelduke.com/contact).
 
 ## Documentation
 For more information check [http://www.pixelduke.com/fxribbon](http://www.pixelduke.com/fxribbon)
 
 ## Issues and Contributions
-Issues can be reported to the Issue tracker.  
+Issues can be reported to the Issue tracker. If you're not sponsoring or fixing them yourself, please be patiente as I can only work on them during my spare time and according to priorities.  
 Contributions can be submitted via Pull requests.
 
 ## Controls used inside Ribbon
