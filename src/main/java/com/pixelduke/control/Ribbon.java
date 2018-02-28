@@ -43,74 +43,23 @@ import java.util.HashMap;
 public class Ribbon extends Control{
     private final static String DEFAULT_STYLE_CLASS = "ribbon";
 
-    private final ObservableList<String> tabTitles;
     private final ObservableList<RibbonTab> tabs;
 
-    private final HashMap<String, RibbonTab> titleToRibbonTab;
-
     private QuickAccessBar quickAccessBar;
-
 
     public Ribbon()
     {
         quickAccessBar = new QuickAccessBar();
 
-        tabTitles = FXCollections.observableArrayList();
         tabs = FXCollections.observableArrayList();
-        titleToRibbonTab = new HashMap<>();
-
-        tabTitles.addListener(this::tabTitlesChanged);
 
         getStyleClass().setAll(DEFAULT_STYLE_CLASS);
-    }
-
-    private void tabTitlesChanged(ListChangeListener.Change<? extends String> changed) {
-        while(changed.next())
-        {
-            if (changed.wasAdded())
-            {
-                updateAddedRibbonTabs(changed.getAddedSubList());
-            }
-            if(changed.wasRemoved())
-            {
-                for (String title : changed.getRemoved())
-                    titleToRibbonTab.remove(title);
-            }
-        }
-    }
-
-    private void updateAddedRibbonTabs(Collection<? extends String> ribbonTabTitles) {
-        for (String title : ribbonTabTitles)
-        {
-            RibbonTab ribbonTab = new RibbonTab(title);
-            titleToRibbonTab.put(title, ribbonTab);
-            tabs.add(ribbonTab);
-        }
-    }
-
-    public ObservableList<String> getTabTitles()
-    {
-        return tabTitles;
     }
 
     public ObservableList<RibbonTab> getTabs(){
         return tabs;
     }
 
-    public QuickAccessBar getQuickAccessBar()
-    {
-        return quickAccessBar;
-    }
-
-    public void setQuickAccessBar(QuickAccessBar qAccessBar)
-    {
-        quickAccessBar = qAccessBar;
-    }
-
-    @Override
-    protected Skin<?> createDefaultSkin() {
-        return new RibbonSkin(this);
-    }
 
     /***************************************************************************
      *                                                                         *
@@ -119,7 +68,6 @@ public class Ribbon extends Control{
      **************************************************************************/
 
     /** Selected Ribbon Tab **/
-
     private final SimpleObjectProperty<RibbonTab> selectedRibbonTab = new SimpleObjectProperty<>();
 
     public SimpleObjectProperty selectedRibbonTabProperty()
@@ -135,8 +83,25 @@ public class Ribbon extends Control{
         selectedRibbonTab.set(ribbonTab);
     }
 
+
+    public QuickAccessBar getQuickAccessBar()
+    {
+        return quickAccessBar;
+    }
+    public void setQuickAccessBar(QuickAccessBar qAccessBar)
+    {
+        quickAccessBar = qAccessBar;
+    }
+
+
     @Override
     public String getUserAgentStylesheet() {
         return Ribbon.class.getResource("fxribbon.css").toExternalForm();
     }
+
+    @Override
+    protected Skin<?> createDefaultSkin() {
+        return new RibbonSkin(this);
+    }
+
 }
