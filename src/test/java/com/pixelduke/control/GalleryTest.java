@@ -27,32 +27,35 @@
 
 package com.pixelduke.control;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-//import org.scenicview.ScenicView;
+// THIS STILL NEEDS SOME WORK SO AS BEEN COMMENTED OUT
+//
 
-import java.net.URL;
-
-public class GalleryTest extends Application {
-    private static final String RESOURCE = "GalleryTest.fxml";
-
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        URL resource = GalleryTest.class.getResource(RESOURCE);
-        Parent root = FXMLLoader.load(resource);
-        Scene scene = new Scene(root);
-
-//        ScenicView.show(scene);
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-    public static void main(String[] args)
-    {
-        launch(args);
-    }
-}
+//import javafx.application.Application;
+//import javafx.fxml.FXMLLoader;
+//import javafx.scene.Parent;
+//import javafx.scene.Scene;
+//import javafx.stage.Stage;
+////import org.scenicview.ScenicView;
+//
+//import java.net.URL;
+//
+//public class GalleryTest extends Application {
+//    private static final String RESOURCE = "GalleryTest.fxml";
+//
+//    @Override
+//    public void start(Stage primaryStage) throws Exception {
+//        URL resource = GalleryTest.class.getResource(RESOURCE);
+//        Parent root = FXMLLoader.load(resource);
+//        Scene scene = new Scene(root);
+//
+////        ScenicView.show(scene);
+//
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
+//    }
+//
+//    public static void main(String[] args)
+//    {
+//        launch(args);
+//    }
+//}

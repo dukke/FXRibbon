@@ -26,43 +26,46 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.pixelduke.control.ribbon;
+// THIS STILL NEEDS SOME WORK SO AS BEEN COMMENTED OUT
+//
 
-import javafx.scene.Node;
-
-public class GalleryItem {
-
-    private String name;
-    private String category;
-    private Node graphic;
-
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setCategory(String category)
-    {
-        this.category = category;
-    }
-
-    public String getCategory()
-    {
-        return category;
-    }
-
-    public void setGraphic(Node graphic)
-    {
-        this.graphic = graphic;
-    }
-
-    public Node getGraphic()
-    {
-        return graphic;
-    }
-}
+//package com.pixelduke.control.ribbon;
+//
+//import javafx.scene.Node;
+//
+//public class GalleryItem {
+//
+//    private String name;
+//    private String category;
+//    private Node graphic;
+//
+//    public void setName(String name)
+//    {
+//        this.name = name;
+//    }
+//
+//    public String getName()
+//    {
+//        return name;
+//    }
+//
+//    public void setCategory(String category)
+//    {
+//        this.category = category;
+//    }
+//
+//    public String getCategory()
+//    {
+//        return category;
+//    }
+//
+//    public void setGraphic(Node graphic)
+//    {
+//        this.graphic = graphic;
+//    }
+//
+//    public Node getGraphic()
+//    {
+//        return graphic;
+//    }
+//}
