@@ -954,7 +954,7 @@
  *                                                                             *
  ******************************************************************************/
 
-.ribbon .column
+.ribbon-group-content > .column
 {
     -fx-padding: 16px 0px 16px 10px;
     -fx-spacing: 6;
