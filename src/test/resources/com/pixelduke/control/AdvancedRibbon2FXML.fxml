@@ -39,9 +39,37 @@
   ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 
+<?import com.pixelduke.control.ribbon.QuickAccessBar?>
 <BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
     <top>
         <Ribbon>
+            <quickAccessBar>
+                <QuickAccessBar>
+                    <buttons>
+                        <Button>
+                            <graphic>
+                                <ImageView>
+                                    <Image url="@icons8_Save_16px.png" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button>
+                            <graphic>
+                                <ImageView>
+                                    <Image url="@icons8_Undo_16px.png" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button>
+                            <graphic>
+                                <ImageView>
+                                    <Image url="@icons8_Redo_16px.png" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </buttons>
+                </QuickAccessBar>
+            </quickAccessBar>
             <tabs>
                 <RibbonTab text="HOME">
                     <ribbonGroups>
@@ -68,19 +96,24 @@
                                         </ImageView>
                                     </graphic>
                                 </Button>
-                                <Button contentDisplay="TOP" text="Save as" wrapText="true" alignment="BOTTOM_LEFT" styleClass="big">
+                                <!--<Button contentDisplay="TOP" text="Save as" wrapText="true" alignment="BOTTOM_LEFT" styleClass="big">
                                     <graphic>
                                         <ImageView>
                                             <Image url="@icons8_Save_as_32px.png" />
                                         </ImageView>
                                     </graphic>
-                                </Button>
+                                </Button>-->
                             </nodes>
                         </RibbonGroup>
                         <RibbonGroup title="Preferences">
                             <nodes>
                                 <Column>
-                                    <RibbonItem>
+                                    <RibbonItem label="Theme:">
+                                        <graphic>
+                                            <ImageView>
+                                                <Image url="@icons8_Change_Theme_16px.png" />
+                                            </ImageView>
+                                        </graphic>
                                         <item>
                                             <ComboBox>
                                                 <items>
@@ -95,7 +128,12 @@
                                         </item>
                                     </RibbonItem>
 
-                                    <RibbonItem>
+                                    <RibbonItem label="Language:">
+                                        <graphic>
+                                            <ImageView>
+                                                <Image url="@icons8_Location_16px.png" />
+                                            </ImageView>
+                                        </graphic>
                                         <item>
                                             <ComboBox>
                                                 <items>
