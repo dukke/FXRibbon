@@ -3,3 +3,12 @@ plugins {
     id 'java-library'
 }
 
+version = '1.0.0'
+
+jar {
+    manifest {
+        attributes( 'Implementation-Title': project.name,
+                    'Implementation-Version': project.version)
+    }
+}
+

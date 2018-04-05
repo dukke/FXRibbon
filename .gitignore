@@ -43,3 +43,6 @@ lib/
 # Gradle
 .gradle/
 .nb-gradle/
+
+# Gradle output dir
+build/
