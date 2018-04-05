@@ -53,6 +53,7 @@ public class QuickAccessBar extends Control {
         return buttons;
     }
 
+    //TODO: Clarify this..
     public ObservableList<Button> getRightButtons()
     {
         return rightButtons;
