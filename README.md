@@ -9,6 +9,9 @@ For more information check [http://www.pixelduke.com/fxribbon](http://www.pixeld
 Issues can be reported to the Issue tracker. If you're not sponsoring or fixing them yourself, please be patiente as I can only work on them during my spare time and according to priorities.  
 Contributions can be submitted via Pull requests.
 
+## Jar Download
+If you just want to download the jar file containing the library go to [releases tab](https://github.com/dukke/FXRibbon/releases)
+
 ## Controls used inside Ribbon
 The controls used inside the ribbon (e.g. comboboxs, texfield, etc)  are based on JMetro, visit [http://www.pixelduke.com/jmetro](http://www.pixelduke.com/jmetro)
 for more information.  
