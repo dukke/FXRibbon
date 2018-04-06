@@ -32,6 +32,8 @@
     H1_COLOR: #1550bd;
     RIBBON_BUTTON_COLOR: #7f7f7f;
     RIBBON_BUTTON_HIGHLIGHT_COLOR: #d5e1f2;
+    RIBBON_BUTTON_PRESSED_BACKGROUND_COLOR: #828282;
+    RIBBON_BUTTON_PRESSED_TEXT_COLOR: #FFFFFF;
 
     BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%);
 
@@ -260,7 +262,7 @@
 
 .ribbon-group .button:pressed, .ribbon-group .button:default:hover:pressed
 {
-    -fx-background-color: black;
+    -fx-background-color: RIBBON_BUTTON_PRESSED_BACKGROUND_COLOR;
     -fx-text-fill: white;
 }
 
