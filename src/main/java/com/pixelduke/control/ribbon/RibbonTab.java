@@ -33,9 +33,6 @@ import javafx.scene.control.Tab;
 import javafx.scene.layout.HBox;
 
 import java.util.List;
-import javafx.event.EventHandler;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 
 public class RibbonTab extends Tab {
