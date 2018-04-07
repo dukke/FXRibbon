@@ -33,10 +33,11 @@ import javafx.scene.control.Tab;
 import javafx.scene.layout.HBox;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.input.ScrollEvent;
 
 public class RibbonTab extends Tab {
-//    public static final int CONTENT_HEIGHT = 70;
 
     private static final String DEFAULT_STYLE_CLASS = "ribbon-tab";
 
@@ -45,6 +46,8 @@ public class RibbonTab extends Tab {
     private ObservableList<RibbonGroup> ribbonGroups;
 
     private String contextualColor;
+
+    private ScrollPane scrollPane;
 
     public RibbonTab() {
         init();
@@ -58,14 +61,27 @@ public class RibbonTab extends Tab {
     private void init() {
         ribbonGroups = FXCollections.observableArrayList();
         content = new HBox();
+        scrollPane = new ScrollPane(content);
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
-        this.setContent(content);
+        this.setContent(scrollPane);
 
-        final double dx = 10;
+        final double dx = 0.100;
+        AtomicReference<Double> intendedHValue = new AtomicReference<>();
 
         content.setOnScroll((ScrollEvent s) -> {
-            double translate = content.getTranslateX() + (s.getDeltaY() > 0 ? +dx : -dx);
-            content.setTranslateX(translate);
+
+            intendedHValue.set(scrollPane.getHvalue()
+                    + (s.getDeltaY() > 0 ? +dx : -dx));
+
+            if (intendedHValue.get() < scrollPane.getHmin()) {
+                scrollPane.setHvalue(scrollPane.getHmin());
+            } else if (intendedHValue.get() > scrollPane.getHmax()) {
+                scrollPane.setHvalue(scrollPane.getHmax());
+            } else {
+                scrollPane.setHvalue(intendedHValue.get());
+            }
         });
 
         setClosable(false);
