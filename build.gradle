@@ -29,8 +29,8 @@ task sourceJar(type: Jar) {
 }
 
 bintray {
-    user = property('BINTRAY_USER')
-    key = property('BINTRAY_KEY')
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
     pkg {
         repo = 'maven'
         name = 'FXRibbon'
