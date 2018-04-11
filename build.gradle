@@ -7,7 +7,7 @@ plugins {
 sourceCompatibility = '1.8'
 
 group = 'com.pixelduke'
-version = '1.0.0'
+version = '1.0.1'
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
@@ -42,9 +42,9 @@ bintray {
         issueTrackerUrl = 'https://github.com/dukke/FXRibbon/issues'
         publicDownloadNumbers = true
         version {
-            name = '1.0.0'
+            name = project.version
             desc = 'FXRibbon First release' // Version description
-            vcsTag = '1.0.0'
+            vcsTag = project.version
         }
     }
 }
