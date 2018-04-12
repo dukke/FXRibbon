@@ -8,6 +8,8 @@ sourceCompatibility = '1.8'
 
 group = 'com.pixelduke'
 version = '1.0.1'
+def versionDescription = 'FXRibbon First release'
+
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
@@ -33,7 +35,7 @@ bintray {
     key = System.getenv('BINTRAY_KEY')
     pkg {
         repo = 'maven'
-        name = 'FXRibbon'
+        name = project.name
         //userOrg = 'dukke'
         licenses = ['Apache-2.0']
         vcsUrl = 'https://github.com/dukke/FXRibbon.git'
@@ -43,7 +45,7 @@ bintray {
         publicDownloadNumbers = true
         version {
             name = project.version
-            desc = 'FXRibbon First release' // Version description
+            desc = versionDescription // Version description
             vcsTag = project.version
         }
     }
