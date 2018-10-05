@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+mainClassName = 'com.pixelduke.control.AdvancedRibbon2Test'
+
+dependencies {
+    compile project(':fxribbon')
+//    compile name: 'ScenicView'
+}
+
+repositories {
+//    flatDir {
+//        dirs 'lib'
+//    }
+}

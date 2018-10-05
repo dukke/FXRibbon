@@ -27,7 +27,7 @@ for more information.
 For now the option has been to, for the most commonly used controls inside the ribbon, have these styles available through this library and so avoid another dependency for most use cases. 
 
 ## Icons used on test apps
-Kudos icons8 for the icons used in the test apps, visit [https://icons8.com](https://icons8.com) for more information.
+Kudos icons8 for the icons used in the sample apps, visit [https://icons8.com](https://icons8.com) for more information.
 
 # About The Author
 I hope you don't mind just a bit of publicity. I'm a [JavaFX and Swing Freelancer and Consultant](https://www.pixelduke.com),
