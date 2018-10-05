@@ -206,7 +206,8 @@
 }
 
 .ribbon-group .title {
-    -fx-fill: #767676;
+    /*-fx-fill: #767676;*/
+    -fx-text-fill: #767676;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 

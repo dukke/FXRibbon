@@ -28,11 +28,11 @@
 package impl.com.pixelduke.skin.ribbon;
 
 import com.pixelduke.control.ribbon.RibbonGroup;
-import com.sun.javafx.scene.control.skin.LabeledText;
 import javafx.collections.ListChangeListener;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.control.Separator;
 import javafx.scene.control.SkinBase;
 import javafx.scene.layout.HBox;
@@ -47,7 +47,7 @@ public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
 
     private final HBox content;
     private final HBox container;
-    private final LabeledText title;
+    private final Label title;
 
     /**
      * Constructor for all SkinBase instances.
@@ -66,7 +66,7 @@ public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
 
         container = new HBox();
 
-        title = new LabeledText(control);
+        title = new Label();
         StackPane stackPane = new StackPane();
         stackPane.getChildren().add(title);
 
