@@ -32,6 +32,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jfxtras.styles.jmetro8.JMetro;
 //import org.scenicview.ScenicView;
 
 import java.net.URL;
@@ -47,6 +48,7 @@ public class AdvancedRibbon2Test extends Application {
         Scene scene = new Scene(root);
 
 //        ScenicView.show(scene);
+        new JMetro(JMetro.Style.LIGHT).applyTheme(scene);
 
         primaryStage.setMaximized(true);
         primaryStage.setScene(scene);

@@ -5,9 +5,11 @@ mainClassName = 'com.pixelduke.control.AdvancedRibbon2Test'
 dependencies {
     compile project(':fxribbon')
 //    compile name: 'ScenicView'
+    compile 'org.jfxtras:jmetro:4.6'
 }
 
 repositories {
+    jcenter()
 //    flatDir {
 //        dirs 'lib'
 //    }
