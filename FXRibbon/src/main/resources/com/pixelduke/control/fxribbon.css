@@ -40,18 +40,6 @@
     CONTROLS_LABEL_COLOR: #4b4b4b;
 }
 
-.label.font-awesome
-{
-    -fx-font-family: "FontAwesome";
-    -fx-font-size: 32px;
-}
-
-.label.ico-moon
-{
-    -fx-font-family: "icomoon";
-    -fx-font-size: 32px;
-}
-
 .ribbon > .outer-container > .tab-pane > .tab-content-area
 {
     -fx-background-color: #cccccc, white;
