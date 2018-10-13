@@ -32,7 +32,7 @@
     H1_COLOR: #2796c4; /* @Deprecated: Use ACCENT_COLOR instead. This variable will be removed in a later version */
     ACCENT_COLOR: H1_COLOR;
 
-    RIBBON_BUTTON_HIGHLIGHT_COLOR: derive(ACCENT_COLOR, 80%);
+    RIBBON_BUTTON_HIGHLIGHT_COLOR: derive(ACCENT_COLOR, 95%);
     BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%); /* Used for toggle buttons when they're selected */
 
     /* Label color of controls inside the Ribbon */
