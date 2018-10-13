@@ -35,6 +35,8 @@
 
     BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%);
 
+    CONTROLS_LABEL_COLOR: #4b4b4b; /* Label color of controls inside the Ribbon */
+
     CONTROLS_ACCENT_COLOR: #0675c7;
     CONTROLS_DARK_COLOR: derive(CONTROLS_ACCENT_COLOR, -20%);
     CONTROLS_VERY_DARK_COLOR: derive(CONTROLS_ACCENT_COLOR, -40%);
@@ -76,7 +78,7 @@
 .ribbon .label{
     -fx-font-family: "Segoe UI";
     -fx-font-size: 1em;
-    -fx-text-fill: #4e4e4e;
+    -fx-text-fill: CONTROLS_LABEL_COLOR;
 }
 
 /*******************************************************************************
@@ -174,7 +176,7 @@
 
 
 .ribbon  > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
-    -fx-text-fill: #767676;
+    -fx-text-fill: gray !important;
     -fx-font-size: 1em !important; /* 12 */
     -fx-font-family: "Segoe UI";
 }
@@ -242,7 +244,7 @@
 
     -fx-font-family:"Segoe UI" !important;
     -fx-font-size: 1em !important; /* 12 */
-    -fx-text-fill: #828282 !important;
+    -fx-text-fill: CONTROLS_LABEL_COLOR !important;
 
     -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em !important; /* 4 8 4 8 */
 
@@ -301,7 +303,7 @@
 
     -fx-font-family:"Segoe UI" !important;
     -fx-font-size: 1.166667em !important; /* 14 */
-    -fx-text-fill: #828282 !important;
+    -fx-text-fill: CONTROLS_LABEL_COLOR !important;
 
     -fx-border-color: transparent !important;
     -fx-border-width: 2 !important;
