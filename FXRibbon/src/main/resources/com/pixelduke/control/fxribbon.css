@@ -33,7 +33,8 @@
     ACCENT_COLOR: H1_COLOR;
 
     RIBBON_BUTTON_HIGHLIGHT_COLOR: derive(ACCENT_COLOR, 95%);
-    BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%); /* Used for toggle buttons when they're selected */
+    BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%); /* @Deprecated: Use RIBBON_BUTTON_SELECTED_COLOR instead. This variable will be removed in a later version */
+    RIBBON_BUTTON_SELECTED_COLOR: BUTTON_SELECTED_COLOR; /* Used for buttons when they're selected */
 
     /* Label color of controls inside the Ribbon */
     CONTROLS_LABEL_COLOR: #4b4b4b;
@@ -329,7 +330,7 @@
 }
 
 .ribbon-group .toggle-button:selected {
-    -fx-background-color: BUTTON_SELECTED_COLOR !important;
+    -fx-background-color: RIBBON_BUTTON_SELECTED_COLOR !important;
     -fx-text-fill: CONTROLS_LABEL_COLOR !important;
 }
 
