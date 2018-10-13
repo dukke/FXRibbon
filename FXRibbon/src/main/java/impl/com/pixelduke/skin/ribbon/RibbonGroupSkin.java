@@ -42,7 +42,6 @@ import javafx.scene.layout.VBox;
 import java.util.Collection;
 
 public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
-    public final static int CONTENT_HEIGHT = 112;
     private final static int DEFAULT_SPACING = 0;
 
     private final HBox content;
@@ -58,7 +57,6 @@ public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
         super(control);
 
         content = new HBox();
-        content.setMinHeight(CONTENT_HEIGHT);
         content.setAlignment(Pos.CENTER);
         content.setSpacing(DEFAULT_SPACING);
 
@@ -67,17 +65,18 @@ public class RibbonGroupSkin extends SkinBase<RibbonGroup> {
         container = new HBox();
 
         title = new Label();
-        StackPane stackPane = new StackPane();
-        stackPane.getChildren().add(title);
+        StackPane titleContainer = new StackPane();
+        titleContainer.getChildren().add(title);
 
         title.textProperty().bind(control.titleProperty());
+        titleContainer.getStyleClass().setAll("title-container");
         title.getStyleClass().setAll("title");
 
         control.getNodes().addListener(this::buttonsChanged);
         updateAddedButtons(control.getNodes());
 
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(content, stackPane);
+        vBox.getChildren().addAll(content, titleContainer);
         container.getChildren().addAll(vBox, separator);
 
         getChildren().add(container);

@@ -71,7 +71,7 @@
                 </QuickAccessBar>
             </quickAccessBar>
             <tabs>
-                <RibbonTab text="HOME">
+                <RibbonTab text="Home">
                     <ribbonGroups>
                         <RibbonGroup title="File">
                             <nodes>
@@ -124,6 +124,9 @@
                                                         <String fx:value="Business Blue Steel" />
                                                     </FXCollections>
                                                 </items>
+                                                <value>
+                                                    <String fx:value="Office Silver 2007" />
+                                                </value>
                                             </ComboBox>
                                         </item>
                                     </RibbonItem>
@@ -144,6 +147,9 @@
                                                         <String fx:value="English (USA)" />
                                                     </FXCollections>
                                                 </items>
+                                                <value>
+                                                    <String fx:value="English (UK)" />
+                                                </value>
                                             </ComboBox>
                                         </item>
                                     </RibbonItem>
@@ -158,6 +164,9 @@
                                                         <String fx:value="Degrees" />
                                                     </FXCollections>
                                                 </items>
+                                                <value>
+                                                    <String fx:value="Radians" />
+                                                </value>
                                             </ComboBox>
                                         </item>
                                     </RibbonItem>
@@ -165,7 +174,6 @@
                                         <item>
                                             <TextField text="2" prefWidth="60" > </TextField>
                                         </item>
-
                                     </RibbonItem>
                                     <RibbonItem label="Exponential Threshold:" >
                                         <item>
@@ -212,17 +220,17 @@
                         </RibbonGroup>
                     </ribbonGroups>
                 </RibbonTab>
-                <RibbonTab text="INDEPENDENT VARIABLE">
+                <RibbonTab text="Independent Variable">
                 </RibbonTab>
-                <RibbonTab text="MODEL">
+                <RibbonTab text="Model">
                 </RibbonTab>
-                <RibbonTab text="CHART">
+                <RibbonTab text="Chart">
                 </RibbonTab>
-                <RibbonTab text="TABLE">
+                <RibbonTab text="Table">
                 </RibbonTab>
-                <RibbonTab text="ANIMATION">
+                <RibbonTab text="Animation">
                 </RibbonTab>
-                <RibbonTab text="NOTES">
+                <RibbonTab text="Notes">
                 </RibbonTab>
                 <!--<RibbonTab text="SERIES" contextualColor="blue">-->
                 <!--</RibbonTab>-->

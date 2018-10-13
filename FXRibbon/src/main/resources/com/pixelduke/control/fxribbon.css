@@ -563,6 +563,15 @@
  * Column                                                                      *
  *                                                                             *
  ******************************************************************************/
+.ribbon-group-content {
+    /* These two below + the label height + the padding on ribbon-group define the height of the Ribbon */
+    -fx-max-height: 112px;
+    -fx-min-height: 112px;
+}
+
+.ribbon-group{
+    -fx-padding: 0 0 5px 0;
+}
 
 .ribbon-group-content > .column
 {
