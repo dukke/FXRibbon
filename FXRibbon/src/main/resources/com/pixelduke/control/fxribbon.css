@@ -32,17 +32,11 @@
     H1_COLOR: #2796c4; /* @Deprecated: Use ACCENT_COLOR instead. This variable will be removed in a later version */
     ACCENT_COLOR: H1_COLOR;
 
-    RIBBON_BUTTON_COLOR: #7f7f7f;
     RIBBON_BUTTON_HIGHLIGHT_COLOR: derive(ACCENT_COLOR, 80%);
-
-    BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%);
+    BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%); /* Used for toggle buttons when they're selected */
 
     /* Label color of controls inside the Ribbon */
     CONTROLS_LABEL_COLOR: #4b4b4b;
-
-    CONTROLS_ACCENT_COLOR: #0675c7;
-    CONTROLS_DARK_COLOR: derive(CONTROLS_ACCENT_COLOR, -20%);
-    CONTROLS_VERY_DARK_COLOR: derive(CONTROLS_ACCENT_COLOR, -40%);
 }
 
 .label.font-awesome
@@ -55,11 +49,6 @@
 {
     -fx-font-family: "icomoon";
     -fx-font-size: 32px;
-}
-
-.label.glyph-icon
-{
-    -fx-text-fill: RIBBON_BUTTON_COLOR;
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-content-area
@@ -266,10 +255,6 @@
     -fx-background-color: RIBBON_BUTTON_HIGHLIGHT_COLOR !important;
 }
 
-.ribbon-group .button:pressed > .label.glyph-icon{
-    -fx-text-fill: white !important;
-}
-
 .ribbon-group .button:pressed, .ribbon-group .button:default:hover:pressed
 {
     -fx-background-color: black !important;
@@ -340,10 +325,6 @@
 .ribbon-group .toggle-button:pressed, .ribbon-group .toggle-button:pressed:selected
 {
     -fx-background-color: black !important;
-    -fx-text-fill: white !important;
-}
-
-.ribbon-group .toggle-button:pressed > .label.glyph-icon, .ribbon-group .toggle-button:pressed:selected > .label.glyph-icon  {
     -fx-text-fill: white !important;
 }
 
@@ -422,12 +403,6 @@
 {
     -fx-background-color: black !important;
     -fx-text-fill: white !important;
-}
-
-.ribbon-group > .ribbon-group-content > .menu-button:pressed > .label > .label.glyph-icon, .ribbon-group > .ribbon-group-content > .menu-button:pressed > .label > .text {
-    -fx-text-fill: white !important;
-    -fx-fill: white !important;
-
 }
 
 .ribbon-group > .ribbon-group-content > .menu-button:pressed > .arrow-button > .arrow{
@@ -519,10 +494,6 @@
 
 .quick-access-bar > .outer-container .button:hover{
     -fx-background-color: RIBBON_BUTTON_HIGHLIGHT_COLOR !important;
-}
-
-.quick-access-bar > .outer-container .button:pressed > .label.glyph-icon{
-    -fx-text-fill: white !important;
 }
 
 .quick-access-bar > .outer-container .button:pressed
