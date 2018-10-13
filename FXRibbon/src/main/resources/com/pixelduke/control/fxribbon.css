@@ -81,8 +81,8 @@
  ******************************************************************************/
 
 .ribbon > .outer-container > .tab-pane {
-    -fx-tab-min-height: 2em; /* 24 */
-    -fx-tab-max-height: 2em; /* 24 */
+    -fx-tab-min-height: 2.91666375em; /* 34 */
+    -fx-tab-max-height: 2.91666375em; /* 34 */
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-header-area {
