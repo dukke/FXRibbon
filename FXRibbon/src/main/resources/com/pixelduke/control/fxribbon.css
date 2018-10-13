@@ -349,7 +349,7 @@
 
 .ribbon-group .toggle-button:selected {
     -fx-background-color: BUTTON_SELECTED_COLOR !important;
-    -fx-text-fill: #828282 !important;
+    -fx-text-fill: CONTROLS_LABEL_COLOR !important;
 }
 
 .ribbon-group .toggle-button:disabled {
