@@ -29,13 +29,16 @@
 {
     -fx-background: white;
 
-    H1_COLOR: #1550bd;
+    H1_COLOR: #2796c4; /* @Deprecated: Use ACCENT_COLOR instead. This variable will be removed in a later version */
+    ACCENT_COLOR: H1_COLOR;
+
     RIBBON_BUTTON_COLOR: #7f7f7f;
     RIBBON_BUTTON_HIGHLIGHT_COLOR: #d5e1f2;
 
     BUTTON_SELECTED_COLOR: derive(RIBBON_BUTTON_HIGHLIGHT_COLOR, -3%);
 
-    CONTROLS_LABEL_COLOR: #4b4b4b; /* Label color of controls inside the Ribbon */
+    /* Label color of controls inside the Ribbon */
+    CONTROLS_LABEL_COLOR: #4b4b4b;
 
     CONTROLS_ACCENT_COLOR: #0675c7;
     CONTROLS_DARK_COLOR: derive(CONTROLS_ACCENT_COLOR, -20%);
@@ -182,11 +185,11 @@
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
-    -fx-text-fill: H1_COLOR;
+    -fx-text-fill: ACCENT_COLOR !important;
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
-    -fx-text-fill: H1_COLOR;
+    -fx-text-fill: ACCENT_COLOR !important;
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-header-area > .tab-header-background {
