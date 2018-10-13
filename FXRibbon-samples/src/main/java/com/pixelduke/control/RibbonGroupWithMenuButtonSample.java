@@ -27,34 +27,35 @@
 
 package com.pixelduke.control;
 
+import com.pixelduke.control.ribbon.RibbonGroup;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-//import org.scenicview.ScenicView;
 
-import java.net.URL;
-
-public class AdvancedRibbonTest extends Application {
-    private static final String RESOURCE = "AdvancedRibbonFXML.fxml";
+public class RibbonGroupWithMenuButtonSample extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
-        URL resource = AdvancedRibbonTest.class.getResource(RESOURCE);
-        Parent root = FXMLLoader.load(resource);
-        Scene scene = new Scene(root);
+    public void start(Stage primaryStage) {
+        BorderPane rootNode = new BorderPane();
+        RibbonGroup ribbonGroup = new RibbonGroup();
 
+        rootNode.setTop(ribbonGroup);
+
+        MenuButton number = new MenuButton("Number");
+
+        number.getItems().addAll(new MenuItem("test1"), new MenuItem("test2"), new MenuItem("test3"), new MenuItem("test4"));
+        ribbonGroup.getNodes().addAll(number);
+
+        Scene scene = new Scene(rootNode);
 //        ScenicView.show(scene);
-
-        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

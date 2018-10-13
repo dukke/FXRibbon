@@ -27,62 +27,32 @@
 
 package com.pixelduke.control;
 
-import com.pixelduke.control.ribbon.RibbonGroup;
-import com.pixelduke.control.ribbon.RibbonTab;
-import com.pixelduke.control.util.AwesomeIcon;
-import com.pixelduke.control.util.Icon;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class RibbonWithGroupsTest extends Application{
+import java.net.URL;
+
+public class RibbonCreatedThroughFXMLSample extends Application {
+    private static final String RESOURCE = "RibbonFXML.fxml";
 
     @Override
-    public void start(Stage primaryStage) {
-        BorderPane rootNode = new BorderPane();
-        Ribbon ribbon = new Ribbon();
-        RibbonTab ribbonTab = new RibbonTab("Test");
-        RibbonGroup ribbonGroup = new RibbonGroup();
+    public void start(Stage primaryStage) throws Exception
+    {
+        URL resource = RibbonCreatedThroughFXMLSample.class.getResource(RESOURCE);
+        Parent root = FXMLLoader.load(resource);
+        Scene scene = new Scene(root);
 
-        rootNode.setTop(ribbon);
+//        ScenicView.show(scene);
 
-        Button iconButton = new Button("Play", new Icon(AwesomeIcon.PLAY));
-        iconButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(iconButton);
-
-        iconButton = new Button("Stop", new Icon(AwesomeIcon.STOP));
-        iconButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(iconButton);
-
-        iconButton = new Button("Pause", new Icon(AwesomeIcon.PAUSE));
-        iconButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(iconButton);
-
-        iconButton = new Button("Next");
-        iconButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(iconButton);
-
-        ribbonTab.getRibbonGroups().add(ribbonGroup);
-
-        ribbonGroup = new RibbonGroup();
-        iconButton = new Button("Save Results", new Icon(AwesomeIcon.SAVE));
-        iconButton.setContentDisplay(ContentDisplay.TOP);
-        ribbonGroup.getNodes().add(iconButton);
-
-        ribbonTab.getRibbonGroups().add(ribbonGroup);
-
-
-        ribbon.getTabs().add(ribbonTab);
-
-        Scene scene = new Scene(rootNode);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         launch(args);
     }
 }

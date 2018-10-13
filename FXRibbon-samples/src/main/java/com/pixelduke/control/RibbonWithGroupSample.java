@@ -27,32 +27,44 @@
 
 package com.pixelduke.control;
 
+import com.pixelduke.control.ribbon.RibbonGroup;
+import com.pixelduke.control.ribbon.RibbonTab;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ContentDisplay;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-import java.net.URL;
-
-public class RibbonCreatedThroughFXMLTest extends Application {
-    private static final String RESOURCE = "RibbonFXML.fxml";
+public class RibbonWithGroupSample extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
-        URL resource = RibbonCreatedThroughFXMLTest.class.getResource(RESOURCE);
-        Parent root = FXMLLoader.load(resource);
-        Scene scene = new Scene(root);
+    public void start(Stage primaryStage) {
+        BorderPane rootNode = new BorderPane();
+        Ribbon ribbon = new Ribbon();
+        RibbonTab ribbonTab = new RibbonTab("Test");
+        RibbonGroup ribbonGroup = new RibbonGroup();
 
-//        ScenicView.show(scene);
+        rootNode.setTop(ribbon);
 
+        Image image = new Image(QuickAccessBarSample.class.getResource("icons8_Bold_32px.png").toExternalForm());
+        ImageView imageView = new ImageView(image);
+        Button iconButton = new Button("Bold", imageView);
+        iconButton.setContentDisplay(ContentDisplay.TOP);
+        ribbonGroup.getNodes().add(iconButton);
+
+
+        ribbonTab.getRibbonGroups().add(ribbonGroup);
+        ribbon.getTabs().add(ribbonTab);
+
+        Scene scene = new Scene(rootNode);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

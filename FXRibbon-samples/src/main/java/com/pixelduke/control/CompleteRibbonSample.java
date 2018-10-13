@@ -37,13 +37,13 @@ import jfxtras.styles.jmetro8.JMetro;
 
 import java.net.URL;
 
-public class AdvancedRibbon2Test extends Application {
-    private static final String RESOURCE = "AdvancedRibbon2FXML.fxml";
+public class CompleteRibbonSample extends Application {
+    private static final String RESOURCE = "CompleteRibbonFXML.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL resource = AdvancedRibbonTest.class.getResource(RESOURCE);
+        URL resource = CompleteRibbonSample.class.getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
         Scene scene = new Scene(root);
 

@@ -3,8 +3,6 @@ package com.pixelduke.control;
 import com.pixelduke.control.ribbon.QuickAccessBar;
 import com.pixelduke.control.ribbon.RibbonGroup;
 import com.pixelduke.control.ribbon.RibbonTab;
-import com.pixelduke.control.util.AwesomeIcon;
-import com.pixelduke.control.util.Icon;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,7 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class QuickAccessBarTest extends Application {
+public class QuickAccessBarSample extends Application {
 
     @Override
     public void start(Stage primaryStage) {
@@ -25,19 +23,19 @@ public class QuickAccessBarTest extends Application {
 
         rootNode.setTop(ribbon);
 
-        Image image = new Image(QuickAccessBarTest.class.getResource("icons8_Bold_32px.png").toExternalForm());
+        Image image = new Image(QuickAccessBarSample.class.getResource("icons8_Bold_32px.png").toExternalForm());
         ImageView imageView = new ImageView(image);
         Button iconButton = new Button("Bold", imageView);
         iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
-        image = new Image(QuickAccessBarTest.class.getResource("icons8_Italic_32px.png").toExternalForm());
+        image = new Image(QuickAccessBarSample.class.getResource("icons8_Italic_32px.png").toExternalForm());
         imageView = new ImageView(image);
         iconButton = new Button("Italic", imageView);
         iconButton.setContentDisplay(ContentDisplay.TOP);
         ribbonGroup.getNodes().add(iconButton);
 
-        image = new Image(QuickAccessBarTest.class.getResource("icons8_Underline_32px.png").toExternalForm());
+        image = new Image(QuickAccessBarSample.class.getResource("icons8_Underline_32px.png").toExternalForm());
         imageView = new ImageView(image);
         iconButton = new Button("Underline", imageView);
         iconButton.setContentDisplay(ContentDisplay.TOP);
@@ -50,19 +48,19 @@ public class QuickAccessBarTest extends Application {
         QuickAccessBar quickAccessBar = new QuickAccessBar();
         // Save
         Button saveButton = new Button();
-        image = new Image(QuickAccessBarTest.class.getResource("icons8_Save_16px.png").toExternalForm());
+        image = new Image(QuickAccessBarSample.class.getResource("icons8_Save_16px.png").toExternalForm());
         imageView = new ImageView(image);
         saveButton.setGraphic(imageView);
 
         // Undo
         Button undoButton = new Button();
-        image = new Image(QuickAccessBarTest.class.getResource("icons8_Undo_16px.png").toExternalForm());
+        image = new Image(QuickAccessBarSample.class.getResource("icons8_Undo_16px.png").toExternalForm());
         imageView = new ImageView(image);
         undoButton.setGraphic(imageView);
 
         // Redo
         Button redoButton = new Button();
-        image = new Image(QuickAccessBarTest.class.getResource("icons8_Redo_16px.png").toExternalForm());
+        image = new Image(QuickAccessBarSample.class.getResource("icons8_Redo_16px.png").toExternalForm());
         imageView = new ImageView(image);
         redoButton.setGraphic(imageView);
 

@@ -5,7 +5,6 @@
 <?import com.pixelduke.control.Ribbon?>
 <?import com.pixelduke.control.ribbon.RibbonTab?>
 <?import com.pixelduke.control.ribbon.RibbonGroup?>
-<?import com.pixelduke.control.util.Icon?>
 <!--
   ~  Copyright (c) 2016, 2018 Pixel Duke (Pedro Duque Vieira - www.pixelduke.com)
   ~  All rights reserved.
@@ -33,33 +32,42 @@
   ~  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 
-<?import com.pixelduke.control.util.Icon?>
-<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="410.0">
     <top>
         <Ribbon>
             <tabs>
-                <RibbonTab text="HOME">
+                <RibbonTab text="Home">
                     <ribbonGroups>
                         <RibbonGroup title="File">
                             <nodes>
                                 <Button contentDisplay="TOP" text="Open">
                                     <graphic>
-                                        <Icon value="FOLDER_OPEN_ALT" />
+                                        <ImageView>
+                                            <Image url="@icons8_Open_32px_3.png" />
+                                        </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="New">
                                     <graphic>
-                                        <Icon value="FILE_ALT" />
+                                        <ImageView>
+                                            <Image url="@icons8_File_32px_1.png" />
+                                        </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save">
                                     <graphic>
-                                        <Icon value="SAVE" />
+                                        <ImageView>
+                                            <Image url="@icons8_Save_32px.png" />
+                                        </ImageView>
                                     </graphic>
                                 </Button>
                                 <Button contentDisplay="TOP" text="Save as">
                                     <graphic>
-                                        <Icon value="SAVE" />
+                                        <ImageView>
+                                            <Image url="@icons8_Save_as_32px.png" />
+                                        </ImageView>
                                     </graphic>
                                 </Button>
                             </nodes>
