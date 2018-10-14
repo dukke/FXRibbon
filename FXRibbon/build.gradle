@@ -7,7 +7,7 @@ plugins {
 sourceCompatibility = '1.8'
 
 version = '1.2.0'
-def versionDescription = 'FXRibbon First release'
+def versionDescription = 'FXRibbon'
 
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
