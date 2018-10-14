@@ -24,11 +24,21 @@ task javadocJar(type: Jar) {
     from javadoc
 }
 
+javadoc {
+    options.addStringOption('javafx', '-quiet')
+}
+
 task sourceJar(type: Jar) {
     from sourceSets.main.allJava
     classifier "sources"
 }
 
+artifacts {
+    archives sourceJar
+    archives javadocJar
+}
+
+/* Publishing */
 bintray {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
