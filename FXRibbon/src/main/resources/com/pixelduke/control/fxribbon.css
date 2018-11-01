@@ -41,6 +41,11 @@
 
     /* Label color of controls inside the Ribbon */
     CONTROLS_LABEL_COLOR: #4b4b4b;
+    /* Color for titles - tabs titles */
+    TITLES_COLOR: gray;
+    /* Color for Ribbon group titles */
+    RIBBON_GROUP_TITLE: #767676;
+
 }
 
 .ribbon > .outer-container > .tab-pane > .tab-content-area
@@ -160,7 +165,7 @@
 
 
 .ribbon  > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
-    -fx-text-fill: gray !important;
+    -fx-text-fill: TITLES_COLOR !important;
     -fx-font-size: 1em !important; /* 12 */
     -fx-font-family: "Segoe UI";
 }
@@ -196,8 +201,7 @@
 }
 
 .ribbon-group .title {
-    /*-fx-fill: #767676;*/
-    -fx-text-fill: #767676;
+    -fx-text-fill: RIBBON_GROUP_TITLE;
     -fx-font-family: "Segoe UI";
 }
 
