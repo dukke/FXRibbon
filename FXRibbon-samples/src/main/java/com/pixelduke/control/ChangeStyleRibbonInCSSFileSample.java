@@ -9,23 +9,22 @@ import jfxtras.styles.jmetro8.JMetro;
 
 import java.net.URL;
 
-public class ChangeAccentColorSample extends Application {
+public class ChangeStyleRibbonInCSSFileSample extends Application {
     private static final String RESOURCE = "CompleteRibbonFXML.fxml";
+    private static final String CSS_FILE = "ribbon_sample.css";
 
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL resource = ChangeAccentColorSample.class.getResource(RESOURCE);
+        URL resource = ChangeStyleRibbonInCSSFileSample.class.getResource(RESOURCE);
         Parent root = FXMLLoader.load(resource);
-
-        Ribbon ribbon = (Ribbon) root.lookup(".ribbon");
-        ribbon.setStyle("ACCENT_COLOR: #10893e"); // A green color
 
         Scene scene = new Scene(root);
 
 //        ScenicView.show(scene);
         new JMetro(JMetro.Style.LIGHT).applyTheme(scene);
 
+        scene.getStylesheets().add(ChangeStyleRibbonInCSSFileSample.class.getResource(CSS_FILE).toExternalForm());
 
         primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
@@ -37,4 +36,3 @@ public class ChangeAccentColorSample extends Application {
         launch(args);
     }
 }
-

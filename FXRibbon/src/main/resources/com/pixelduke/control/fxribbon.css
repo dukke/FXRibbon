@@ -29,6 +29,9 @@
 {
     -fx-background: white;
 
+
+    /************************* CSS Variables (Override to set your own theme) ****************************************/
+
     H1_COLOR: #2796c4; /* @Deprecated: Use ACCENT_COLOR instead. This variable will be removed in a later version */
     ACCENT_COLOR: H1_COLOR;
 
