@@ -39,9 +39,6 @@ import javafx.scene.control.Skin;
 public class RibbonGroup extends Labeled {
     private final static String DEFAULT_STYLE_CLASS = "ribbon-group";
 
-    private final ObservableList<Node> nodes;
-    private final SimpleStringProperty title;
-
     public RibbonGroup()
     {
         nodes = FXCollections.observableArrayList();
@@ -50,25 +47,28 @@ public class RibbonGroup extends Labeled {
         getStyleClass().setAll(DEFAULT_STYLE_CLASS);
     }
 
+
+    private final ObservableList<Node> nodes;
     public ObservableList<Node> getNodes()
     {
         return nodes;
     }
 
+
+    private final SimpleStringProperty title;
     public void setTitle(String title)
     {
         this.title.set(title);
     }
-
     public String getTitle()
     {
         return title.get();
     }
-
     public StringProperty titleProperty()
     {
         return title;
     }
+
 
     @Override
     protected Skin<?> createDefaultSkin() {

@@ -38,9 +38,6 @@ import javafx.scene.control.Skin;
 public class QuickAccessBar extends Control {
     private final static String DEFAULT_STYLE_CLASS = "quick-access-bar";
 
-    private final ObservableList<Button> buttons;
-    private final ObservableList<Button> rightButtons;
-
     public QuickAccessBar()
     {
         buttons = FXCollections.observableArrayList();
@@ -49,15 +46,20 @@ public class QuickAccessBar extends Control {
         getStyleClass().setAll(DEFAULT_STYLE_CLASS);
     }
 
+
+    private final ObservableList<Button> buttons;
     public ObservableList<Button> getButtons(){
         return buttons;
     }
+
 
     //TODO: Clarify this..
     public ObservableList<Button> getRightButtons()
     {
         return rightButtons;
     }
+    private final ObservableList<Button> rightButtons;
+
 
     @Override
     protected Skin<?> createDefaultSkin() {

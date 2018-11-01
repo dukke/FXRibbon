@@ -39,10 +39,6 @@ import javafx.scene.control.Skin;
 public class RibbonItem extends Control {
     private final static String DEFAULT_STYLE_CLASS = "ribbon-item";
 
-    private final ObjectProperty<Node> graphic;
-    private final StringProperty label;
-    private final ObjectProperty<Node> item;
-
     public RibbonItem()
     {
         graphic = new SimpleObjectProperty<>();
@@ -52,52 +48,50 @@ public class RibbonItem extends Control {
         getStyleClass().setAll(DEFAULT_STYLE_CLASS);
     }
 
-
-
+    private final ObjectProperty<Node> graphic;
     public Node getGraphic()
     {
         return graphic.get();
     }
-
     public void setGraphic(Node graphic)
     {
         this.graphic.set(graphic);
     }
-
     public ObjectProperty graphicProperty()
     {
         return graphic;
     }
 
+
+    private final StringProperty label;
     public String getLabel()
     {
         return label.get();
     }
-
     public void setLabel(String label)
     {
         this.label.set(label);
     }
-
     public StringProperty labelPropery()
     {
         return label;
     }
 
+
+    private final ObjectProperty<Node> item;
     public void setItem(Node item)
     {
         this.item.set(item);
     }
-
     public Node getItem()
     {
         return item.get();
     }
-
     public ObjectProperty itemProperty()
     {
         return item;
     }
+
 
     @Override
     protected Skin<?> createDefaultSkin() {

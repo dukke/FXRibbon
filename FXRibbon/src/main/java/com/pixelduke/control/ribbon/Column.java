@@ -37,5 +37,4 @@ public class Column extends VBox{
     {
         getStyleClass().setAll(DEFAULT_STYLE_CLASS);
     }
-
 }

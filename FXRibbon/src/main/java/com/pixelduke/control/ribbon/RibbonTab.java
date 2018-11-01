@@ -41,8 +41,6 @@ public class RibbonTab extends Tab {
 
     private HBox content;
 
-    private ObservableList<RibbonGroup> ribbonGroups;
-
     private String contextualColor;
 
     public RibbonTab()
@@ -57,7 +55,6 @@ public class RibbonTab extends Tab {
     }
 
     private void init() {
-        ribbonGroups = FXCollections.observableArrayList();
         content = new HBox();
 //        content.setMinHeight(CONTENT_HEIGHT);
         this.setContent(content);
@@ -121,6 +118,8 @@ public class RibbonTab extends Tab {
         }
     }
 
+
+    private final ObservableList<RibbonGroup> ribbonGroups = FXCollections.observableArrayList();
 
     public ObservableList<RibbonGroup> getRibbonGroups()
     {
