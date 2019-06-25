@@ -5,6 +5,10 @@ If you want to support the development of this library consider a [donation or s
 ## Documentation
 For more information check [http://www.pixelduke.com/fxribbon](http://www.pixelduke.com/fxribbon)
 
+## License
+
+FXRibbon uses the [new BSD](http://en.wikipedia.org/wiki/BSD_licenses#3-clause_license_.28.22Revised_BSD_License.22.2C_.22New_BSD_License.22.2C_or_.22Modified_BSD_License.22.29) license 
+
 ## Issues and Contributions
 Issues can be reported to the Issue tracker. If you're not sponsoring or fixing them yourself, please be patiente as I can only work on them during my spare time and according to priorities.  
 We welcome contributions, they can be submitted via Pull requests.

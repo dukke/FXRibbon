@@ -46,7 +46,7 @@ bintray {
         repo = 'maven'
         name = project.name
         //userOrg = 'dukke'
-        licenses = ['Apache-2.0']
+        licenses = ['BSD New']
         vcsUrl = 'https://github.com/dukke/FXRibbon.git'
         publications = ['mavenJava']
         websiteUrl = 'https://www.pixelduke.com/fxribbon'
