@@ -2,12 +2,10 @@
 Ribbon control for Java, using JavaFX framework, based on [Microsoft Ribbon](https://en.wikipedia.org/wiki/Ribbon_(computing)).
 If you want to support the development of this library consider a [donation or sponsoring a feature or bug fix](http://www.pixelduke.com/contact).
 
+![Sample FXRibbon app](./Ribbon.png)
+
 ## Documentation
 For more information check [http://www.pixelduke.com/fxribbon](http://www.pixelduke.com/fxribbon)
-
-## License
-
-FXRibbon uses the [new BSD](http://en.wikipedia.org/wiki/BSD_licenses#3-clause_license_.28.22Revised_BSD_License.22.2C_.22New_BSD_License.22.2C_or_.22Modified_BSD_License.22.29) license 
 
 ## Issues and Contributions
 Issues can be reported to the Issue tracker. If you're not sponsoring or fixing them yourself, please be patiente as I can only work on them during my spare time and according to priorities.  
@@ -39,3 +37,7 @@ but more generally can be described as a Front End Freelancer and Consultant sin
 building web apps, etc, and have experience in User Interface Design and User Experience. If you need professional assistance 
 feel free to [contact me](https://www.pixelduke.com/contact).  
 Still this is, and will remain being, a free and open source library, so feel free to use it, royalty free, in your projects commercial or not.
+
+# License
+
+FXRibbon uses the [new BSD](http://en.wikipedia.org/wiki/BSD_licenses#3-clause_license_.28.22Revised_BSD_License.22.2C_.22New_BSD_License.22.2C_or_.22Modified_BSD_License.22.29) license 
